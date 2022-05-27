@@ -11,7 +11,7 @@ $theme-colors: (
   "primary": $clr-primary,
   "secondary":  $clr-secondary,
   "filler": $clr-filler,
-) !default;
+);
 
 // bootstrap default file
 @import "../../node_modules/bootstrap/scss/bootstrap";
