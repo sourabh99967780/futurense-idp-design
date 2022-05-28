@@ -1,0 +1,17 @@
+#marketing {
+    .navbar {
+        .input-group {
+            .alt-search {
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+
+            .act-tune {
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+            }
+        }
+    }
+}

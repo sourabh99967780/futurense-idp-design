@@ -1,3 +1,35 @@
 .navbar {
     font-family: $ff-gilroy;
+
+    a {
+        color: $clr-filler;
+        transition: color ease-in-out 200ms;
+        font-weight: $fw-gilroy-semibold;
+
+        &:hover, &:focus, &:active {
+            color: rgba($clr-filler, 0.8);
+        }
+    }
+
+    .navbar-toggler {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .mobile-nav-link {
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    .signup-nav-btn {
+        font-size: 0.875rem;
+        font-weight: $fw-gilroy-semibold;
+    }
+
+    @media (max-width: 768px) {
+        .signup-nav-btn {
+            width: 100%;
+        }
+    }
 }

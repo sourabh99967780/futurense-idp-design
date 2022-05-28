@@ -3,6 +3,32 @@
 
 .navbar {
   font-family: "Gilroy"; }
+  .navbar a {
+    color: #202020;
+    transition: color ease-in-out 200ms;
+    font-weight: 600; }
+    .navbar a:hover, .navbar a:focus, .navbar a:active {
+      color: rgba(32, 32, 32, 0.8); }
+  .navbar .navbar-toggler {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.6rem; }
+  .navbar .mobile-nav-link span {
+    font-size: 1rem; }
+  .navbar .signup-nav-btn {
+    font-size: 0.875rem;
+    font-weight: 600; }
+  @media (max-width: 768px) {
+    .navbar .signup-nav-btn {
+      width: 100%; } }
+
+#marketing .navbar .input-group .alt-search {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0; }
+#marketing .navbar .input-group .act-tune {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0; }
 
 #login-signup .section {
   height: 100%; }

@@ -19,7 +19,7 @@
 
     <title>Futurense</title>
   </head>
-  <body>
+  <body id="marketing">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light border-bottom">
         <div class="container-fluid mx-4">
@@ -44,7 +44,24 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <a href="/browse-courses.html" class="nav-link flex-shrink-0 mx-lg-3 d-flex justify-content-between">
+            <div class="d-flex d-lg-none input-group mx-lg-5 my-3 order-1 order-lg-2">
+              <input
+                class="form-control pl-5"
+                type="text"
+                placeholder="Search for products"
+              />
+              <span
+                class="material-icons alt-search ml-3 position-absolute translate-middle-y text-muted fs-base"
+              >
+                search
+              </span>
+              <span
+                class="material-icons act-tune mr-3 position-absolute translate-middle-y fs-base"
+              >
+                tune
+              </span>
+            </div>
+            <a href="/browse-courses.html" class="browse-courses-link mobile-nav-link nav-link flex-shrink-0 mx-lg-3 my-2 order-lg-1 order-2 d-flex justify-content-between">
               <div
               class="flex-shrink-0 mx-lg-3"
                 >Browse Courses
@@ -53,24 +70,24 @@
                 arrow_forward_ios
               </span>
             </a>
-            <div class="input-group mx-lg-5">
+            <div class="d-none d-lg-flex input-group mx-lg-5 my-2 order-1 order-lg-2">
               <input
-                class="form-control ps-5"
+                class="form-control pl-5"
                 type="text"
                 placeholder="Search for products"
               />
               <span
-                class="material-icons position-absolute top-50 start-0 translate-middle-y text-muted fs-base ms-3"
+                class="material-icons alt-search ml-3 position-absolute translate-middle-y text-muted fs-base"
               >
                 search
               </span>
               <span
-                class="material-icons position-absolute top-50 translate-middle-y fs-base me-4 end-0"
+                class="material-icons act-tune mr-3 position-absolute translate-middle-y fs-base"
               >
                 tune
               </span>
             </div>
-            <a href="/login.html" class="nav-link flex-shrink-0 mx-lg-3 d-flex justify-content-between">
+            <a href="/login.html" class="login-link mobile-nav-link nav-link flex-shrink-0 mx-lg-3 d-flex justify-content-between order-3">
               <div
               class="flex-shrink-0 mx-lg-3"
                 >Login
@@ -80,7 +97,7 @@
               </span>
             </a>
             <button
-              class="nav-link btn btn-primary flex-shrink-0 px-4"
+              class="signup-nav-btn nav-link btn btn-primary flex-shrink-0 px-4 order-4 w-sm-100 my-3"
             >
               Sign up
             </button>
