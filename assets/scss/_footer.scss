@@ -1,0 +1,88 @@
+#footer {
+  background: $clr-filler;
+  color: $clr-white;
+
+  .footer {
+    &-main {
+      .footer-logo {
+        img {
+          height: 3.875em;
+          width: auto;
+        }
+      }
+
+      .reachus_at_info {
+        transition: all ease-in-out 200ms;
+        text-decoration: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: rgba($clr-secondary, 0.9);
+        }
+      }
+
+      .foot-links {
+        &-heading {
+          font-family: $ff-gilroy;
+          font-weight: $fw-gilroy-semibold;
+          font-size: 1.2rem;
+
+          a {
+            color: $clr-white;
+          }
+        }
+
+        &-subtext {
+          font-family: $ff-metropolis;
+          font-weight: $fw-metropolis-regular;
+          font-size: 1.1rem;
+          color: $clr-footer-link;
+        }
+
+        &-list {
+          li {
+            a {
+              font-family: $ff-metropolis;
+              font-weight: $fw-metropolis-regular;
+              font-size: 1.1rem;
+              color: $clr-footer-link;
+              transition: color ease-in-out 200ms;
+              text-decoration: none;
+
+              &:hover,
+              &:active,
+              &:focus {
+                color: rgba($clr-white, 0.9);
+              }
+            }
+          }
+        }
+
+        .newsletter {
+          .input-group-append {
+            .input-group-text {
+              background-color: $clr-primary;
+              color: $clr-white;
+              padding: 0.8125rem;
+              transition: all ease-in-out 200ms;
+              cursor: pointer;
+
+              &:hover {
+                background-color: rgba($clr-primary, 0.9);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-foot {
+      .copyright {
+        font-family: $ff-metropolis;
+        font-weight: $fw-metropolis-medium;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

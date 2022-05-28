@@ -1,6 +1,9 @@
 .input-group .position-absolute {
   z-index: 5; }
 
+a {
+  text-decoration: none; }
+
 .navbar {
   font-family: "Gilroy"; }
   .navbar a {
@@ -76,6 +79,50 @@
     padding-right: 8.625em !important;
     padding-top: 8.625em;
     padding-bottom: 8.625em; } }
+
+#footer {
+  background: #202020;
+  color: #ffffff; }
+  #footer .footer-main .footer-logo img {
+    height: 3.875em;
+    width: auto; }
+  #footer .footer-main .reachus_at_info {
+    transition: all ease-in-out 200ms;
+    text-decoration: none; }
+    #footer .footer-main .reachus_at_info:hover, #footer .footer-main .reachus_at_info:active, #footer .footer-main .reachus_at_info:focus {
+      color: rgba(253, 186, 47, 0.9); }
+  #footer .footer-main .foot-links-heading {
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 1.2rem; }
+    #footer .footer-main .foot-links-heading a {
+      color: #ffffff; }
+  #footer .footer-main .foot-links-subtext {
+    font-family: "Metropolis";
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #A0A0A0; }
+  #footer .footer-main .foot-links-list li a {
+    font-family: "Metropolis";
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #A0A0A0;
+    transition: color ease-in-out 200ms;
+    text-decoration: none; }
+    #footer .footer-main .foot-links-list li a:hover, #footer .footer-main .foot-links-list li a:active, #footer .footer-main .foot-links-list li a:focus {
+      color: rgba(255, 255, 255, 0.9); }
+  #footer .footer-main .foot-links .newsletter .input-group-append .input-group-text {
+    background-color: #81D0D3;
+    color: #ffffff;
+    padding: 0.8125rem;
+    transition: all ease-in-out 200ms;
+    cursor: pointer; }
+    #footer .footer-main .foot-links .newsletter .input-group-append .input-group-text:hover {
+      background-color: rgba(129, 208, 211, 0.9); }
+  #footer .footer-foot .copyright {
+    font-family: "Metropolis";
+    font-weight: 500;
+    font-size: 0.875rem; }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
