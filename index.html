@@ -13,28 +13,100 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/fonts/gilroy/stylesheet.css" />
+    <link rel="stylesheet" href="assets/fonts/metropolis/stylesheet.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Futurense</title>
   </head>
   <body>
-    <div>Hello from futurense</div>
-    <button class="btn btn-primary">Hello</button>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container-fluid mx-4">
+          <a href="index.html" class="navbar-brand d-none d-sm-block">
+            <img
+              src="assets/img/futurense_logo.svg"
+              alt="Futurense"
+              width="110"
+            />
+          </a>
+          <a
+            href="index.html"
+            class="navbar-brand d-sm-none flex-shrink-0 me-2"
+          >
+            <img
+              src="assets/img/futurense_logo.svg"
+              alt="Futurense"
+              width="74"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <a href="/browse-courses.html" class="nav-link flex-shrink-0 mx-lg-3 d-flex justify-content-between">
+              <div
+              class="flex-shrink-0 mx-lg-3"
+                >Browse Courses
+              </div>
+              <span class="d-sm-none d-flex align-items-center material-icons">
+                arrow_forward_ios
+              </span>
+            </a>
+            <div class="input-group mx-lg-5">
+              <input
+                class="form-control ps-5"
+                type="text"
+                placeholder="Search for products"
+              />
+              <span
+                class="material-icons position-absolute top-50 start-0 translate-middle-y text-muted fs-base ms-3"
+              >
+                search
+              </span>
+              <span
+                class="material-icons position-absolute top-50 translate-middle-y fs-base me-4 end-0"
+              >
+                tune
+              </span>
+            </div>
+            <a href="/login.html" class="nav-link flex-shrink-0 mx-lg-3 d-flex justify-content-between">
+              <div
+              class="flex-shrink-0 mx-lg-3"
+                >Login
+              </div>
+              <span class="d-sm-none d-flex align-items-center material-icons">
+                arrow_forward_ios
+              </span>
+            </a>
+            <button
+              class="nav-link btn btn-primary flex-shrink-0 px-4"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main></main>
+
+    <footer>this is the footer</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
       crossorigin="anonymous"
     ></script>
   </body>

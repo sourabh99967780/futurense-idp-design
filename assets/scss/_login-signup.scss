@@ -1,0 +1,75 @@
+#login-signup {
+    .section {
+        height: 100%;
+    }
+    
+    .left__portion {
+        background-image: url('assets/img/login/bg_image.png');
+        background-size: cover;
+        color: $clr-white;
+        padding: 3em !important;
+        padding-top: 5em !important;
+        background-position: center center;
+    
+        &-heading {
+            font-family: $ff-gilroy;
+            font-weight: $fw-gilroy-black;
+            font-size: 3rem;
+            width: 100%;
+        }
+    
+        &-subtext {
+            font-family: $ff-metropolis;
+            font-weight: $fw-metropolis-light;
+            font-size: 1.25rem;
+        }
+    }
+    
+    .right__portion {
+        padding: 3em !important;
+    
+        &-context {
+            font-family: $ff-gilroy;
+            font-weight: $fw-gilroy-black;
+            margin-bottom: 1.75em;
+        }
+    
+        form {
+            color: $clr-filler;
+        }
+    }
+    
+    .forgot-password {
+        float: right;
+    }
+    
+    .submit-btn {
+        height: 3em;
+    }
+    
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 768px) {
+        .left__portion {
+            padding-left: 7.75em !important;
+            padding-right: 7.75em !important;
+            padding-top: 7.75em !important;
+            padding-bottom: 7.75em !important;
+            background-position: unset;
+        }
+    
+        .left__portion-heading {
+            font-size: 4.375rem;
+        }
+    
+        .left__portion-heading {
+            width: 50%;
+        }
+    
+        .right__portion{
+            padding-left: 8.625em !important;
+            padding-right: 8.625em !important;
+            padding-top: 8.625em;
+            padding-bottom: 8.625em;
+        }
+    }
+}
