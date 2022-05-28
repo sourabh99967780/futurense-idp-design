@@ -23,15 +23,14 @@ a {
   @media (max-width: 768px) {
     .navbar .signup-nav-btn {
       width: 100%; } }
-
-#marketing .navbar .input-group .alt-search {
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0; }
-#marketing .navbar .input-group .act-tune {
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0; }
+  .navbar .input-group .alt-search {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0; }
+  .navbar .input-group .act-tune {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0; }
 
 #login-signup .section {
   height: 100%; }
