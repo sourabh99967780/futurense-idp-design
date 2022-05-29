@@ -16,7 +16,7 @@
 
         &__cta {
             font-family: $ff-gilroy;
-            font-weight: $fw-gilroy-semibold;
+            font-weight: $fw-metropolis-medium;
             padding: 1em 3.5em;
         }
     }
@@ -42,9 +42,9 @@
 
         &__viewall {
             margin-top: 5.1875em;
-            button {
+            a {
                 font-family: $ff-gilroy;
-                font-weight: $fw-gilroy-semibold;
+                font-weight: $fw-metropolis-medium;
                 font-size: 1rem;
             }
         }

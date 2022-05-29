@@ -1,10 +1,15 @@
-.input-group .position-absolute {
-  z-index: 5; }
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
 
 a {
   text-decoration: none; }
 
-#marketing .courses__pagination .page-item.active .page-link {
+.input-group .position-absolute {
+  z-index: 5; }
+
+#marketing .courses__pagination .page-item.active .page-link, #browse-courses .courses__pagination .page-item.active .page-link {
   color: #ffffff;
   background-color: #6EBFC3;
   border-color: #6EBFC3; }
@@ -49,7 +54,7 @@ a {
     padding-top: 5.8125em; }
   #marketing .hero__cta {
     font-family: "Metropolis";
-    font-weight: 600;
+    font-weight: 500;
     padding: 1em 3.5em; }
 #marketing .categories {
   background: #202020;
@@ -66,9 +71,9 @@ a {
     font-size: 2.8rem; }
   #marketing .categories__viewall {
     margin-top: 5.1875em; }
-    #marketing .categories__viewall button {
+    #marketing .categories__viewall a {
       font-family: "Metropolis";
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1rem; }
   #marketing .categories__list-item {
     background: transparent;
@@ -293,7 +298,8 @@ a {
 
 #footer {
   background: #202020;
-  color: #ffffff; }
+  color: #ffffff;
+  margin-top: auto; }
   #footer .footer-main .footer-logo img {
     height: 3.875em;
     width: auto; }
@@ -334,6 +340,121 @@ a {
     font-family: "Metropolis";
     font-weight: 500;
     font-size: 0.875rem; }
+
+#browse-courses {
+  padding-bottom: 4em; }
+  @media (min-width: 992px) {
+    #browse-courses {
+      padding-left: 4em;
+      padding-right: 4em; } }
+  #browse-courses .result__stat {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em; }
+  #browse-courses .filter {
+    padding-right: 0.5em; }
+    #browse-courses .filter__block {
+      background: #F3F3F3;
+      padding: 1em; }
+      #browse-courses .filter__block-effect .form-check {
+        padding-top: 0.5em; }
+      #browse-courses .filter__block a {
+        color: #202020;
+        text-decoration: none;
+        font-weight: 500; }
+  #browse-courses .courses__count {
+    font-weight: 500;
+    font-size: 1.125rem; }
+  #browse-courses .courses__content .card {
+    border: 1px solid rgba(150, 150, 150, 0.15);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+    @media (min-width: 992px) {
+      #browse-courses .courses__content .card {
+        width: 20em !important; } }
+  @media (min-width: 992px) {
+    #browse-courses .courses__content-list {
+      gap: 1em; } }
+  #browse-courses .courses__content-list--item .card {
+    transition: box-shadow ease-in-out 200ms;
+    cursor: pointer; }
+    #browse-courses .courses__content-list--item .card-meta--text {
+      color: #679BA5;
+      background: rgba(110, 191, 195, 0.1);
+      padding: 0.5em 1.25em;
+      font-weight: 500; }
+    #browse-courses .courses__content-list--item .card-meta--price {
+      font-weight: 600; }
+    #browse-courses .courses__content-list--item .card-title {
+      font-family: "Metropolis";
+      font-weight: 600;
+      font-size: 1.25rem; }
+    #browse-courses .courses__content-list--item .card-text {
+      font-size: 0.875rem; }
+    #browse-courses .courses__content-list--item .card-date {
+      align-items: center;
+      gap: 0.5em; }
+      #browse-courses .courses__content-list--item .card-date .date-start .card-date-icon {
+        color: #FDBA2F;
+        background: rgba(253, 186, 47, 0.15); }
+      #browse-courses .courses__content-list--item .card-date .date-end .card-date-icon {
+        color: #FF7901;
+        background: rgba(255, 121, 1, 0.15); }
+      #browse-courses .courses__content-list--item .card-date-icon {
+        padding: 4px; }
+      #browse-courses .courses__content-list--item .card-date-text {
+        font-weight: 500; }
+        #browse-courses .courses__content-list--item .card-date-text p {
+          margin: 0;
+          padding: 0; }
+        #browse-courses .courses__content-list--item .card-date-text-key {
+          font-size: 0.625rem;
+          color: #A0A0A0; }
+        #browse-courses .courses__content-list--item .card-date-text-value {
+          font-size: 0.875rem; }
+    #browse-courses .courses__content-list--item .card-duration {
+      gap: 0.5em; }
+      #browse-courses .courses__content-list--item .card-duration-icon {
+        color: #6EBFC3;
+        background: rgba(110, 191, 195, 0.15);
+        padding: 4px; }
+        #browse-courses .courses__content-list--item .card-duration-icon span {
+          width: 1em; }
+      #browse-courses .courses__content-list--item .card-duration-text {
+        font-weight: 500; }
+        #browse-courses .courses__content-list--item .card-duration-text p {
+          margin: 0;
+          padding: 0; }
+        #browse-courses .courses__content-list--item .card-duration-text-key {
+          font-size: 0.625rem;
+          color: #A0A0A0; }
+        #browse-courses .courses__content-list--item .card-duration-text-value {
+          font-size: 0.875rem; }
+    #browse-courses .courses__content-list--item .card-buttons {
+      gap: 0.8em;
+      font-family: "Metropolis";
+      font-size: 0.75rem; }
+      #browse-courses .courses__content-list--item .card-buttons-apply {
+        color: #6EBFC3;
+        background: transparent;
+        border: 3px solid #6EBFC3;
+        font-weight: 600;
+        transition: all ease-in-out 200ms; }
+        #browse-courses .courses__content-list--item .card-buttons-apply:hover {
+          color: #ffffff;
+          background: #6EBFC3; }
+      #browse-courses .courses__content-list--item .card-buttons-question {
+        color: #ffffff;
+        font-weight: 600; }
+    #browse-courses .courses__content-list--item .card:hover {
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
+  #browse-courses .courses__pagination .page-item {
+    margin-right: 0.5em; }
+    #browse-courses .courses__pagination .page-item .page-link {
+      background: #F3F3F3;
+      color: #202020;
+      border: none; }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
