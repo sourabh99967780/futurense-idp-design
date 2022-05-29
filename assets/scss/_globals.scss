@@ -5,3 +5,9 @@
 a {
     text-decoration: none;
 }
+
+#marketing .courses__pagination .page-item.active .page-link {
+    color: $clr-white;
+    background-color: $clr-primary;
+    border-color: $clr-primary;
+}

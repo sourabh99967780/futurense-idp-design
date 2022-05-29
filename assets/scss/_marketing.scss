@@ -1,3 +1,377 @@
 #marketing {
-    
+    .hero {
+        background: url('assets/img/marketing/hero_right_bg.svg');
+        background-position: right -18% top 25%;
+        background-repeat: no-repeat;
+
+        &__heading {
+            font-family: $ff-gilroy;
+            font-weight: $fw-gilroy-extrabold;
+            font-size: 3rem;
+        }
+
+        &__section {
+            padding-top: 5.8125em;
+        }
+
+        &__cta {
+            font-family: $ff-gilroy;
+            font-weight: $fw-gilroy-semibold;
+            padding: 1em 3.5em;
+        }
+    }
+
+    .categories {
+        background: $clr-filler;
+        color: $clr-white;
+        padding-top: 6.5625em;
+        padding-bottom: 6.5625em;
+        border-radius: 2em 0 2em 0;
+
+        @include for-large-devices {
+            border-radius: 12em 0 12em 0;
+        }
+
+        &__heading {
+            &-text {
+                font-family: $ff-gilroy;
+                font-weight: $fw-gilroy-bold;
+                font-size: 2.8rem;
+            }
+        }
+
+        &__viewall {
+            margin-top: 5.1875em;
+            button {
+                font-family: $ff-gilroy;
+                font-weight: $fw-gilroy-semibold;
+                font-size: 1rem;
+            }
+        }
+
+        &__list {
+            &-item {
+                background: transparent;
+                border: 2px solid $clr-secondary;
+                transition: all ease-in-out 200ms;
+                cursor: pointer;
+                margin-bottom: 1.35em;
+
+                @include for-large-devices {
+                    margin-right: 1.35rem;
+                }
+
+                &:hover {
+                    background: $clr-secondary;
+
+                    .categories__list-item-image {
+                        span {
+                            color: $clr-white;
+                        }
+                    }
+                }
+
+                &-image {
+                    padding: 3em 4.375em;
+
+                    span {
+                        font-size: 4rem;
+                        color: $clr-secondary;
+                        transition: all ease-in-out 200ms;
+                    }
+                }
+
+                &-info {
+                    text-align: center;
+                    padding-bottom: 1.5em;
+
+                    &--title {
+                        font-weight: $fw-metropolis-bold;
+                    }
+
+                    &--text {
+                        color: $clr-white;
+                    }
+                }
+            }
+        }
+    }
+
+    .courses {
+        padding-top: 6.5625em;
+        padding-bottom: 6.5625em;
+
+        &__heading {
+            &-text {
+                font-family: $ff-gilroy;
+                font-weight: $fw-gilroy-bold;
+                font-size: 2.8rem;
+            }
+        }
+
+        &__tab {
+            &-list {
+                &--item {
+                    background: $clr-gray;
+                    padding: 1em 2em;
+                    transition: all ease-in-out 200ms;
+                    cursor: pointer;
+                    margin: 1em;
+                    font-weight: $fw-metropolis-medium;
+
+                    &:hover {
+                        background: $clr-primary;
+                        color: $clr-white;
+                    }
+                }
+
+                &--item.active {
+                    background: $clr-primary;
+                    color: $clr-white;
+                }
+            }
+        }
+
+        &__content {
+            .card {
+                border: 1px solid rgba(#969696, 0.15);
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                
+                @include for-large-devices {
+                    width: 22em !important;
+                }
+            }
+
+            &-list {
+                @include for-large-devices {
+                    gap: 1em;
+                }
+
+                &--item {
+                    .card {
+                        transition: box-shadow ease-in-out 200ms;
+                        cursor: pointer;
+
+                        &-body {
+
+                        }
+
+                        &-meta {
+                            &--text {
+                                color: $clr-primary-dark;
+                                background: rgba($clr-primary, 0.1);
+                                padding: 0.5em 1.25em;
+                                font-weight: $fw-metropolis-medium;
+                            }
+
+                            &--price {
+                                font-weight: $fw-metropolis-semi-bold;
+                            }
+                        }
+
+                        &-title {
+                            font-family: $ff-gilroy;
+                            font-weight: $fw-gilroy-semibold;
+                            font-size: 1.25rem;
+                        }
+
+                        &-text {
+                            font-size: 0.875rem;
+                        }
+
+                        &-date {
+                            align-items: center;
+                            gap: 0.5em;
+
+                            .date-start {
+                                .card-date-icon {
+                                    color: $clr-secondary;
+                                    background: rgba($clr-secondary, 0.15);
+                                }
+                            }
+
+                            .date-end {
+                                .card-date-icon {
+                                    color: $clr-accent-red;
+                                    background: rgba($clr-accent-red, 0.15);
+                                }
+                            }
+
+                            &-icon {
+                                padding: 4px;
+                            }
+
+                            &-text {
+                                font-weight: $fw-metropolis-medium;
+
+                                p {
+                                    margin: 0;
+                                    padding: 0;
+                                }
+
+                                &-key {
+                                    font-size: 0.625rem;
+                                    color: $clr-footer-link;
+                                }
+
+                                &-value {
+                                    font-size: 0.875rem;
+                                }
+                            }
+                        }
+
+                        &-duration {
+                            gap: 0.5em;
+
+                            &-icon {
+                                color: $clr-primary;
+                                background: rgba($clr-primary, 0.15);
+                                padding: 4px;
+
+                                span {
+                                    width: 1em;
+                                }
+                            }
+
+                            &-text {
+                                font-weight: $fw-metropolis-medium;
+
+                                p {
+                                    margin: 0;
+                                    padding: 0;
+                                }
+
+                                &-key {
+                                    font-size: 0.625rem;
+                                    color: $clr-footer-link;
+                                }
+
+                                &-value {
+                                    font-size: 0.875rem;
+                                }
+                            }
+                        }
+
+                        &-buttons {
+                            gap: 0.8em;
+                            font-family: $ff-gilroy;
+                            font-size: 0.75rem;
+
+                            &-apply {
+                                color: $clr-primary;
+                                background: transparent;
+                                border: 3px solid $clr-primary;
+                                font-weight: $fw-gilroy-semibold;
+                                transition: all ease-in-out 200ms;
+
+                                &:hover {
+                                    color: $clr-white;
+                                    background: $clr-primary;
+                                }
+                            }
+
+                            &-question {
+                                color: $clr-white;
+                                font-weight: $fw-gilroy-semibold;
+                            }
+                        }
+
+                        &:hover {
+                            box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__pagination {
+            .page-item {
+                margin-right: 0.5em;
+
+                .page-link {
+                    background: $clr-gray;
+                    color: $clr-filler;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .testimonials {
+        background: $clr-primary-light;
+        padding-top: 6.5625em;
+        padding-bottom: 6.5625em;
+
+        &__head {
+            .testimonials {
+                &__clue {
+
+                }
+
+                &__heading {
+                    font-family: $ff-gilroy;
+                    font-weight: $fw-gilroy-bold;
+                    font-size: 2.8rem;
+                }
+            }
+        }
+
+        .carousel {
+            &-content {
+                background: $clr-white;
+
+                &-text {
+
+                    &--quote {
+                        span {
+                            font-size: 6rem;
+                            color: $clr-primary;
+                            justify-content: center;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    &--testimonial {
+                        font-size: 1rem;
+                        margin: auto 10%;
+                        text-align: center;
+                        margin-top: 2.5em;
+                        margin-bottom: 2.5rem;
+                    }
+
+                    &--author {
+                        text-align: center;
+
+                        &-name {
+                            font-weight: $fw-metropolis-bold;
+                            font-size: 1.1rem;
+                        }
+
+                        &-designation {
+                            font-size: 0.8rem;
+                        }
+
+                        p {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            &-control-prev, &-control-next {
+                width: 10%;
+            }
+
+            &-control-prev-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236EBFC3' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+            }
+               
+            &-control-next-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236EBFC3' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+            }
+        }
+    }
 }

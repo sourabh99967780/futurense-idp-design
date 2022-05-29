@@ -1,6 +1,6 @@
 // font families
 $ff-metropolis: 'Metropolis';
-$ff-gilroy: 'Gilroy';
+$ff-gilroy: 'Metropolis';
 
 // font weights
 
@@ -25,9 +25,15 @@ $fw-gilroy-extrabold: 800;
 $fw-gilroy-black: 900;
 
 // colors
-$clr-primary: #81D0D3;
+$clr-primary: #6EBFC3;
 $clr-secondary: #FDBA2F;
 $clr-filler: #202020;
-$clr-gray: #F3F3F3;
 $clr-white: #ffffff;
+$clr-accent-red: #FF7901;
+$clr-electric-blue: #682FFD;
+$clr-razzle-dazzle-rose: #FD2FE2;
+
+$clr-gray: #F3F3F3;
 $clr-footer-link: #A0A0A0;
+$clr-primary-dark: #679BA5;
+$clr-primary-light: #EFFEFF;
