@@ -1,0 +1,55 @@
+#enrollpage {
+    .intro-text{
+        max-width: 638px;
+        width: 100%;
+    }
+    .intro-text h1{
+        color: #fff;
+        text-align: left;
+        max-width: 638px;
+        width: 100%;
+        font-size: 2.75rem;
+    }
+    .intro-text p{
+        color: #fff;
+        text-align: left;
+        font-size: 1rem;
+    }
+    .duration-wrap{
+        max-width: 402px;
+        width: 100%;
+    }
+    .duration-wrap span{
+        color: #A0A0A0;
+        display: block;
+        font-size: 0.5rem;
+    }
+    .duration-wrap p{
+        color: #fff;
+        font-size: 0.625rem;
+    }
+    .banner-btn button{
+        font-weight: 600;
+    }
+    .content h2{
+        font-size: 1.625em;
+        font-weight: 600;
+        color: #202020;
+    }
+    .content p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #202020;
+    }
+    .pro_wrap{
+        background-color: #FDBA2F;
+        border-radius: 3px;
+        padding: 11px 6px;
+    }
+    .pro_wrap a{
+        color:#202020;
+    }
+    .sub-content p{
+        color:red;
+    }
+}

@@ -456,6 +456,48 @@ a {
       color: #202020;
       border: none; }
 
+#enrollpage .intro-text {
+  max-width: 638px;
+  width: 100%; }
+#enrollpage .intro-text h1 {
+  color: #fff;
+  text-align: left;
+  max-width: 638px;
+  width: 100%;
+  font-size: 2.75rem; }
+#enrollpage .intro-text p {
+  color: #fff;
+  text-align: left;
+  font-size: 1rem; }
+#enrollpage .duration-wrap {
+  max-width: 402px;
+  width: 100%; }
+#enrollpage .duration-wrap span {
+  color: #A0A0A0;
+  display: block;
+  font-size: 0.5rem; }
+#enrollpage .duration-wrap p {
+  color: #fff;
+  font-size: 0.625rem; }
+#enrollpage .banner-btn button {
+  font-weight: 600; }
+#enrollpage .content h2 {
+  font-size: 1.625em;
+  font-weight: 600;
+  color: #202020; }
+#enrollpage .content p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #202020; }
+#enrollpage .pro_wrap {
+  background-color: #FDBA2F;
+  border-radius: 3px;
+  padding: 11px 6px; }
+#enrollpage .pro_wrap a {
+  color: #202020; }
+#enrollpage .sub-content p {
+  color: red; }
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
