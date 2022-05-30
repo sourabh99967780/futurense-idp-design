@@ -1,0 +1,254 @@
+#enrollpage {
+  .banner {
+    background-color: $clr-filler;
+    color: $clr-white;
+  }
+  .intro-text {
+    max-width: 638px;
+    width: 100%;
+  }
+  .intro-text h1 {
+    color: #fff;
+    text-align: left;
+    max-width: 638px;
+    width: 100%;
+    font-size: 2.75rem;
+  }
+  .intro-text {
+    p {
+      color: #fff;
+      text-align: left;
+      font-size: 1rem;
+    }
+    h1 {
+      font-weight: $fw-metropolis-bold;
+    }
+  }
+  .duration-wrap {
+    max-width: 402px;
+    width: 100%;
+  }
+  .duration-wrap span {
+    color: #a0a0a0;
+    display: block;
+    font-size: 0.5rem;
+  }
+  .duration-wrap p {
+    color: #fff;
+    font-size: 0.625rem;
+  }
+  .banner-btn button {
+    font-weight: $fw-metropolis-medium;
+  }
+  .content h2 {
+    font-size: 1.625em;
+    font-weight: $fw-metropolis-medium;
+    color: #202020;
+  }
+  .content p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #202020;
+  }
+  .content {
+    order: 2;
+      @include for-large-devices {
+          order: 1;
+      }
+  }
+  .card-content {
+      order: 1;
+
+      @include for-large-devices {
+          order: 2;
+      }
+  }
+  .pro_wrap {
+    background-color: #fdba2f;
+    border-radius: 3px;
+    padding: 11px 6px;
+  }
+  .pro_wrap a {
+    color: #202020;
+  }
+  .sub-content p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #202020;
+  }
+  .content h2 {
+    border-bottom: 0.30000001192092896px solid #2020203d;
+    line-height: 2;
+  }
+  .card-content {
+    max-width: 28em;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    max-height: 40em;
+    margin-top: 2em;
+
+    @include for-medium-devices {
+      margin-top: -24%;
+      flex-direction: row-reverse;
+    }
+  }
+  .card-content {
+    transition: box-shadow ease-in-out 200ms;
+    cursor: pointer;
+  }
+  .img-wrap img {
+    width: 100%;
+  }
+  .pro_wrap {
+    background-color: #fdba2f;
+    border-radius: 3px;
+    padding: 0 11px;
+    max-height: 26px;
+    align-self: center;
+  }
+  .pro_wrap a {
+    color: #202020;
+    font-size: 12px;
+    font-weight: $fw-metropolis-medium;
+  }
+  .price span {
+    font-size: 40px;
+    font-weight: bold;
+    color: #202020;
+  }
+  .card-apply button {
+    width: 100%;
+  }
+  .card-enroll button {
+    width: 100%;
+    background-color: #fdba2f;
+    font-weight: 600;
+    border: none;
+  }
+  .sub-content {
+    max-width: 627px;
+    width: 100%;
+  }
+  .sub-content h2 {
+    border-bottom: 0.30000001192092896px solid #2020203d;
+    line-height: 2;
+  }
+  .sub-content h4 {
+    font-size: 1.25em;
+    font-weight: $fw-metropolis-medium;
+  }
+  .sub-content span {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .arrow-icon {
+    color: #fdba2f !important;
+    font-size: 1.5rem !important;
+  }
+  .time-icon {
+    color: #81d0d3 !important;
+    font-size: 1.5rem !important;
+  }
+  .stop-icon {
+    color: #ff7901 !important;
+    font-size: 1.5rem !important;
+  }
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+  }
+  .card-content p {
+    margin: 0;
+    padding: 0;
+  }
+  .card-date-icon {
+    padding: 4px;
+  }
+
+  .card {
+    &-date {
+      align-items: center;
+      gap: 0.5em;
+
+      .date-start {
+        .card-date-icon {
+          color: $clr-secondary;
+          background: rgba($clr-secondary, 0.15);
+        }
+      }
+
+      .date-end {
+        .card-date-icon {
+          color: $clr-accent-red;
+          background: rgba($clr-accent-red, 0.15);
+        }
+      }
+
+      &-icon {
+        padding: 4px;
+      }
+
+      &-text {
+        font-weight: $fw-metropolis-medium;
+
+        p {
+          margin: 0;
+          padding: 0;
+        }
+
+        &-key {
+          font-size: 0.625rem;
+          color: $clr-footer-link;
+        }
+
+        &-value {
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    &-duration {
+      gap: 0.5em;
+
+      &-icon {
+        color: $clr-primary;
+        background: rgba($clr-primary, 0.15);
+        padding: 4px;
+
+        span {
+          width: 1em;
+        }
+      }
+
+      &-text {
+        font-weight: $fw-metropolis-medium;
+
+        p {
+          margin: 0;
+          padding: 0;
+        }
+
+        &-key {
+          font-size: 0.625rem;
+          color: $clr-footer-link;
+        }
+
+        &-value {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
