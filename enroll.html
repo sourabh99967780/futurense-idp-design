@@ -20,144 +20,331 @@
     <title>Enroll</title>
   </head>
   <body id="enrollpage">
-      <section style="background-color:#000;">
-        <div class="container py-4">
-            <div class="intro-text py-3">
-                <h1 class="px-2">A beginners guide to User Experience Design</h1>
-                <p class="px-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-            </div>
-            <div class="row px-3 py-2 duration-wrap">   
-                <div class="col-sm">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <p><span>start date</span>15 Jan 2022</p>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <p><span>end date</span>15 Jan 2022</p>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <p><span>Duration</span>15 Jan 2022</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row mb-5 px-3 py-2 banner-btn">
-                <button
-                class="signup-nav-btn nav-link btn btn-primary flex-shrink-0 px-4 order-4 w-sm-100 my-3"
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container-fluid mx-4">
+          <a href="index.html" class="navbar-brand d-none d-sm-block">
+            <img
+              src="assets/img/futurense_logo.svg"
+              alt="Futurense"
+              width="110"
+            />
+          </a>
+          <a
+            href="index.html"
+            class="navbar-brand d-sm-none flex-shrink-0 me-2"
+          >
+            <img
+              src="assets/img/futurense_logo.svg"
+              alt="Futurense"
+              width="74"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div
+              class="d-flex d-lg-none input-group mx-lg-5 my-3 order-1 order-lg-2"
+            >
+              <input
+                class="form-control pl-5"
+                type="text"
+                placeholder="Search for products"
+              />
+              <span
+                class="material-icons alt-search ml-3 position-absolute translate-middle-y text-muted fs-base"
               >
-                Apply Now
-              </button>
+                search
+              </span>
+              <span
+                class="material-icons act-tune mr-3 position-absolute translate-middle-y fs-base"
+              >
+                tune
+              </span>
             </div>
-        </div>
-      </section>
-      <section class="d-flex container flex-wrap">
-          <div class="content col-md container my-5">
-            <h2>Description</h2>
-            <p class="py-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
+            <a
+              href="/browse-courses.html"
+              class="browse-courses-link mobile-nav-link nav-link flex-shrink-0 mx-lg-3 my-2 order-lg-1 order-2 d-flex justify-content-between"
+            >
+              <div class="flex-shrink-0 mx-lg-3">Browse Courses</div>
+              <span class="d-sm-none d-flex align-items-center material-icons">
+                arrow_forward_ios
+              </span>
+            </a>
+            <div
+              class="d-none d-lg-flex input-group mx-lg-5 my-2 order-1 order-lg-2"
+            >
+              <input
+                class="form-control pl-5"
+                type="text"
+                placeholder="Search for products"
+              />
+              <span
+                class="material-icons alt-search ml-3 position-absolute translate-middle-y text-muted fs-base"
+              >
+                search
+              </span>
+              <span
+                class="material-icons act-tune mr-3 position-absolute translate-middle-y fs-base"
+              >
+                tune
+              </span>
+            </div>
+            <a
+              href="/login.html"
+              class="login-link mobile-nav-link nav-link flex-shrink-0 mx-lg-3 d-flex justify-content-between order-3"
+            >
+              <div class="flex-shrink-0 mx-lg-3">Login</div>
+              <span class="d-sm-none d-flex align-items-center material-icons">
+                arrow_forward_ios
+              </span>
+            </a>
+            <button
+              class="signup-nav-btn nav-link btn btn-primary flex-shrink-0 px-4 order-4 w-sm-100 my-3"
+            >
+              Sign up
+            </button>
           </div>
-          <div class="card-content col-md">
-            <div class="col-md img-wrap">
-                <img src="assets/img/program/rectangle_51.png">
-            </div>
-            <div class="row justify-content-between mx-4 py-4">
-                <div class="pro_wrap"><a href="#">Executive Program</a></div>
-                <div class="price"><span>₹ 3600</span></div>
-            </div>
-            <div class="row px-4">
-                <div class="col-sm d-flex align-items-center">
-                    <div class="card-date-icon d-flex align-self-baseline justify-content-center">
-                      <span class="material-icons" style="font-size:1rem;color:#FDBA2F">
-                        play_arrow
-                      </span>
-                    </div>
-                    <div class="card-content">
-                        <p>start date</p>
-                        <p>15 Jan 2022</p>
-                    </div>
-                </div>
-                <div class="col-sm d-flex align-items-center">
-                  <div class="card-date-icon d-flex align-self-baseline justify-content-center">
-                    <span class="material-icons" style="font-size:1rem;color:#FDBA2F">
-                      play_arrow
-                    </span>
-                  </div>
-                  <div class="card-content">
-                    <p>End date</p>
-                    <p>15 Jan 2022</p>
-                  </div>
-              </div>
-              <div class="col-sm d-flex align-items-center">
-                <div class="card-date-icon d-flex align-self-baseline justify-content-center">
-                  <span class="material-icons" style="font-size:1rem;color:#FDBA2F">
+        </div>
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="container pt-5 pb-md-2 px-4 px-lg-0">
+          <div class="intro-text py-3">
+              <h1 class="">A beginners guide to User Experience Design</h1>
+              <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+          </div>
+          <div class="row w-50 w-sm-100 align-items-center">
+            <div class="col-lg-4 d-flex align-items-center card-date my-2 my-lg-0">
+              <div class="card-date d-flex date-start">
+                <div class="card-date-icon d-flex align-items-center justify-content-center">
+                  <span class="material-icons">
                     play_arrow
                   </span>
                 </div>
-                <div class="card-content">
-                  <p>Duration</p>
-                  <p>15 Jan 2022</p>
+                <div class="card-date-text">
+                  <p class="card-date-text-key date-key">Start Date</p>
+                  <p class="card-date-text-value date-value">15 Jan 2022</p>
                 </div>
+              </div>
             </div>
+            <div class="card-date col-lg-4 my-2 my-lg-0">
+              <div class="card-date d-flex date-end">
+                <div class="card-date-icon d-flex align-items-center justify-content-center">
+                  <span class="material-icons">
+                    stop_circle
+                  </span>
+                </div>
+                <div class="card-date-text">
+                  <p class="card-date-text-key date-key">End Date</p>
+                  <p class="card-date-text-value date-value">15 Jan 2022</p>
+                </div>
+              </div>
             </div>
-            <div class="row px-4 mx-1 card-apply">
-                <button
-                class=" btn btn-primary px-4 my-3">
-                Apply Now
-              </button>
-            </div>
-            <div class="row px-4 mx-1 card-enroll">
-                <button
-                class="btn btn-primary px-4 my-3">
-              Have a question ?
-              </button>
+            <div class="card-duration d-flex align-items-center col-lg-4 my-2 my-lg-0">
+              <div class="card-duration-icon d-flex align-items-center justify-content-center">
+                <span class="material-icons">
+                  timer_black
+                </span>
+              </div>
+              <div class="card-duration-text">
+                <p class="card-duration-text-key duration-key">Duration</p>
+                <p class="card-duration-text-value duration-value">10 Days</p>
+              </div>
             </div>
           </div>
-      </section>
-      <section class="container">
-        <div class="sub-content col-md">
-        <h2>Course Content</h2>
-          <div class="py-4">
-            <h4>Syllabus</h4>
-            <p class="py-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </p>
-            <span>12 Lessons (Videos, Quizzes, Reading Content) <a href="#">View All</a></span>
+          <div class="row mb-5 mt-4 pl-3 banner-btn">
+              <button
+              class="signup-nav-btn nav-link btn btn-primary flex-shrink-0 px-4 order-4 w-sm-100 my-3"
+            >
+              Apply Now
+            </button>
+          </div>
+      </div>
+    </section>
+    <section class="d-flex container flex-wrap">
+        <div class="content col-md-7 my-5">
+          <h2>Description</h2>
+          <p class="py-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
+        </div>
+        <div class="card-content col-md-5">
+          <div class="row img-wrap">
+              <img src="assets/img/program/rectangle_51.png">
+          </div>
+          <div class="row justify-content-between mx-4 py-4">
+              <div class="pro_wrap"><a href="#">Executive Program</a></div>
+              <div class="price"><span>₹ 3600</span></div>
+          </div>
+          <div class="row px-4 align-items-center">
+              <div class="col-lg-4 d-flex align-items-center card-date my-2 my-lg-0">
+                <div class="card-date d-flex date-start">
+                  <div class="card-date-icon d-flex align-items-center justify-content-center">
+                    <span class="material-icons">
+                      play_arrow
+                    </span>
+                  </div>
+                  <div class="card-date-text">
+                    <p class="card-date-text-key date-key">Start Date</p>
+                    <p class="card-date-text-value date-value">15 Jan 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-date col-lg-4 my-2 my-lg-0">
+                <div class="card-date d-flex date-end">
+                  <div class="card-date-icon d-flex align-items-center justify-content-center">
+                    <span class="material-icons">
+                      stop_circle
+                    </span>
+                  </div>
+                  <div class="card-date-text">
+                    <p class="card-date-text-key date-key">End Date</p>
+                    <p class="card-date-text-value date-value">15 Jan 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-duration d-flex align-items-center col-lg-4 my-2 my-lg-0">
+                <div class="card-duration-icon d-flex align-items-center justify-content-center">
+                  <span class="material-icons">
+                    timer_black
+                  </span>
+                </div>
+                <div class="card-duration-text">
+                  <p class="card-duration-text-key duration-key">Duration</p>
+                  <p class="card-duration-text-value duration-value">10 Days</p>
+                </div>
+              </div>
+          </div>
+          <div class="row px-4 mx-1 card-apply">
+              <button
+              class=" btn btn-primary px-4 my-3">
+              Apply Now
+            </button>
+          </div>
+          <div class="row px-4 mx-1 card-enroll">
+              <button
+              class="btn btn-primary px-4 my-3">
+            Have a question ?
+            </button>
           </div>
         </div>
-      </section>
+    </section>
+    <section class="container mb-5">
+      <div class="sub-content col-md">
+      <h2>Course Content</h2>
+        <div class="py-4">
+          <h4>Syllabus</h4>
+          <p class="py-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <span>12 Lessons (Videos, Quizzes, Reading Content) <a href="#">View All</a></span>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <footer id="footer">
+        <div class="container-fluid py-4 p-lg-5">
+          <div class="footer-main">
+            <div class="row">
+              <div class="col-lg-2">
+                <div class="infoarea">
+                  <a href="index.html" class="footer-logo pl-3 row">
+                    <img src="assets/img/futurense-logo-white.svg" alt="Futurense">
+                  </a>
+                  <div class="reachus_combine mt-5 row flex-column pl-3">
+                    <h5 class="reachus_at_text">Reach us at</h5>
+                    <a class="reachus_at_info text-secondary" href="mailto:info@futurense.com"> info@futurense.com </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="foot-links my-3 my-lg-0">
+                  <h5 class="foot-links-heading">Courses</h5>
+                  <ul class="list-unstyled foot-links-list">
+                    <li class="">
+                      <a href="#">Kickstarter Courses</a>
+                    </li>
+                    <li class="">
+                      <a href="#">Executive Programs</a>
+                    </li>
+                    <li class="">
+                      <a href="#">Futurense Bootcamps</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="foot-links my-3 my-lg-0">
+                  <h5 class="foot-links-heading">Categories</h5>
+                  <ul class="list-unstyled foot-links-list">
+                    <li class="">
+                      <a href="#">Technical</a>
+                    </li>
+                    <li class="">
+                      <a href="#">Management</a>
+                    </li>
+                    <li class="">
+                      <a href="#">Design</a>
+                    </li>
+                    <li class="">
+                      <a href="#">Programming</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <h5 class="foot-links-heading my-3 my-lg-0">
+                  <a href="Privacy Policy">Privacy Policy</a>
+                </h5>
+              </div>
+              <div class="col-lg-2">
+                <h5 class="foot-links-heading my-3 my-lg-0">
+                  <a href="Terms of Service">Terms of Service</a>
+                </h5>
+              </div>
+              <div class="col-lg-2">
+                <div class="foot-links my-3 my-lg-0">
+                  <h5 class="foot-links-heading">Stay up to date with new Skills</h5>
+                  <p class="foot-links-subtext mb-lg-5">Pick and course and start a new journey towards growth.</p>
+                  <div class="newsletter mt-3">
+                    <div class="form-group">
+                      <div class="input-group mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Email address"
+                          aria-label="Recipient's username"
+                          aria-describedby="basic-addon2"
+                        />
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="basic-addon2"
+                            ><span class="material-icons">
+                              send
+                              </span></i
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-foot row pt-4">
+            <div class="copyright col-lg-12 text-center"
+              >Copyright © 2022 Futurense . All rights Reserved
+            </div>
+          </div>
+        </div>
+      </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

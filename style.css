@@ -456,6 +456,9 @@ a {
       color: #202020;
       border: none; }
 
+#enrollpage .banner {
+  background-color: #202020;
+  color: #ffffff; }
 #enrollpage .intro-text {
   max-width: 638px;
   width: 100%; }
@@ -468,13 +471,14 @@ a {
 #enrollpage .intro-text p {
   color: #fff;
   text-align: left;
-  font-size: 1rem;
-  font-weight: 200; }
+  font-size: 1rem; }
+#enrollpage .intro-text h1 {
+  font-weight: 700; }
 #enrollpage .duration-wrap {
   max-width: 402px;
   width: 100%; }
 #enrollpage .duration-wrap span {
-  color: #A0A0A0;
+  color: #a0a0a0;
   display: block;
   font-size: 0.5rem; }
 #enrollpage .duration-wrap p {
@@ -490,8 +494,18 @@ a {
   font-size: 14px;
   font-weight: 300;
   color: #202020; }
+#enrollpage .content {
+  order: 2; }
+  @media (min-width: 992px) {
+    #enrollpage .content {
+      order: 1; } }
+#enrollpage .card-content {
+  order: 1; }
+  @media (min-width: 992px) {
+    #enrollpage .card-content {
+      order: 2; } }
 #enrollpage .pro_wrap {
-  background-color: #FDBA2F;
+  background-color: #fdba2f;
   border-radius: 3px;
   padding: 11px 6px; }
 #enrollpage .pro_wrap a {
@@ -504,10 +518,12 @@ a {
   border-bottom: 0.30000001192092896px solid #2020203d;
   line-height: 2; }
 #enrollpage .card-content {
-  max-width: 456px;
+  max-width: 28em;
   width: 100%;
-  margin-top: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  max-height: 40em;
+  margin-top: 2em; }
   @media (min-width: 768px) {
     #enrollpage .card-content {
       margin-top: -24%;
@@ -516,10 +532,9 @@ a {
   transition: box-shadow ease-in-out 200ms;
   cursor: pointer; }
 #enrollpage .img-wrap img {
-  max-width: 400px;
   width: 100%; }
 #enrollpage .pro_wrap {
-  background-color: #FDBA2F;
+  background-color: #fdba2f;
   border-radius: 3px;
   padding: 0 11px;
   max-height: 26px;
@@ -528,10 +543,6 @@ a {
   color: #202020;
   font-size: 12px;
   font-weight: 500; }
-#enrollpage .card-content span {
-  color: #A0A0A0;
-  display: block;
-  font-size: 0.5rem; }
 #enrollpage .price span {
   font-size: 40px;
   font-weight: bold;
@@ -540,7 +551,7 @@ a {
   width: 100%; }
 #enrollpage .card-enroll button {
   width: 100%;
-  background-color: #FDBA2F;
+  background-color: #fdba2f;
   font-weight: 600;
   border: none; }
 #enrollpage .sub-content {
@@ -556,16 +567,16 @@ a {
   font-size: 1rem;
   font-weight: 300; }
 #enrollpage .arrow-icon {
-  color: #FDBA2F !important;
+  color: #fdba2f !important;
   font-size: 1.5rem !important; }
 #enrollpage .time-icon {
-  color: #81D0D3 !important;
+  color: #81d0d3 !important;
   font-size: 1.5rem !important; }
 #enrollpage .stop-icon {
-  color: #FF7901 !important;
+  color: #ff7901 !important;
   font-size: 1.5rem !important; }
 #enrollpage .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -576,13 +587,52 @@ a {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: 'liga';
+  -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased; }
 #enrollpage .card-content p {
   margin: 0;
   padding: 0; }
 #enrollpage .card-date-icon {
   padding: 4px; }
+#enrollpage .card-date {
+  align-items: center;
+  gap: 0.5em; }
+  #enrollpage .card-date .date-start .card-date-icon {
+    color: #FDBA2F;
+    background: rgba(253, 186, 47, 0.15); }
+  #enrollpage .card-date .date-end .card-date-icon {
+    color: #FF7901;
+    background: rgba(255, 121, 1, 0.15); }
+  #enrollpage .card-date-icon {
+    padding: 4px; }
+  #enrollpage .card-date-text {
+    font-weight: 500; }
+    #enrollpage .card-date-text p {
+      margin: 0;
+      padding: 0; }
+    #enrollpage .card-date-text-key {
+      font-size: 0.625rem;
+      color: #A0A0A0; }
+    #enrollpage .card-date-text-value {
+      font-size: 0.875rem; }
+#enrollpage .card-duration {
+  gap: 0.5em; }
+  #enrollpage .card-duration-icon {
+    color: #6EBFC3;
+    background: rgba(110, 191, 195, 0.15);
+    padding: 4px; }
+    #enrollpage .card-duration-icon span {
+      width: 1em; }
+  #enrollpage .card-duration-text {
+    font-weight: 500; }
+    #enrollpage .card-duration-text p {
+      margin: 0;
+      padding: 0; }
+    #enrollpage .card-duration-text-key {
+      font-size: 0.625rem;
+      color: #A0A0A0; }
+    #enrollpage .card-duration-text-value {
+      font-size: 0.875rem; }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
