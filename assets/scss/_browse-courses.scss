@@ -1,11 +1,6 @@
 #browse-courses {
     padding-bottom: 4em;
 
-    @include for-large-devices {
-        padding-left: 4em;
-        padding-right: 4em;
-    }
-
     .result {
         &__stat {
             font-weight: $fw-gilroy-bold;

@@ -14,9 +14,17 @@
     <link rel="stylesheet" href="assets/fonts/metropolis/stylesheet.css" />
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Futurense</title>
   </head>
-  <body id="application">
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light border-bottom">
         <div class="container-fluid mx-4">
@@ -115,9 +123,54 @@
       </nav>
     </header>
 
-    <main>
-        <section class="application">
+    <main class="application__form" id="application">
+        <section class="application__form-header container-fluid-padding container-fluid">
+            <div class="row">
+                <div class="col application__form-header-text text-center">We will need a bit more information before we <span class="text-primary">get started.</span></div>
+            </div>
+        </section>
 
+        <section class="application__form-content pt-5">
+            <div class="container-fluid container-fluid-padding">
+                <ul class="row application__form-content-tablist list-group list-group-horizontal justify-content-center container-fluid-padding">
+                    <li class="col-md-2 justify-content-center ml-auto application__form-content-tablist-item list-group-item d-flex align-items-center">
+                        <span class="material-icons">
+                            perm_identity
+                        </span>
+                        <span>Basics</span>
+                    </li>
+                    <li class="col-md-2 justify-content-center application__form-content-tablist-item list-group-item d-flex align-items-center">
+                        <span class="material-icons">
+                            school
+                        </span>
+                        <span>Educational/Professional Details</span>
+                    </li>
+                    <li class="col-md-2 justify-content-center application__form-content-tablist-item list-group-item d-flex align-items-center">
+                        <span class="material-icons">
+                            history_edu
+                        </span>
+                        <span>Sign &amp; Submit</span>
+                    </li>
+                    <li class="col-md-2 justify-content-center mr-auto application__form-content-tablist-item list-group-item d-flex align-items-center">
+                        <span class="material-icons">
+                            done
+                        </span>
+                        <span>Complete</span>
+                    </li>
+                </ul>
+
+                <form class="application__form-content-details" action="">
+                    <div class="row application__form-content-details--section basics">
+                        <div class="col-md-7 application__form-content-details--section-left">
+                            <h5 class="section-left--heading">Basics</h5>
+                            <p class="section-left--subheading"></p>
+                        </div>
+                        <div class="col-md-5 application__form-content-details--section-right">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 

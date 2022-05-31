@@ -14,6 +14,11 @@ a {
   background-color: #6EBFC3;
   border-color: #6EBFC3; }
 
+@media (min-width: 992px) {
+  .container-fluid-padding {
+    padding-left: 4em !important;
+    padding-right: 4em !important; } }
+
 .navbar {
   font-family: "Metropolis"; }
   .navbar a {
@@ -343,10 +348,6 @@ a {
 
 #browse-courses {
   padding-bottom: 4em; }
-  @media (min-width: 992px) {
-    #browse-courses {
-      padding-left: 4em;
-      padding-right: 4em; } }
   #browse-courses .result__stat {
     font-weight: 700;
     font-size: 1.75rem;
@@ -632,6 +633,17 @@ a {
       color: #A0A0A0; }
     #enrollpage .card-duration-text-value {
       font-size: 0.875rem; }
+
+#application .application__form-header {
+  padding-top: 3.625em;
+  padding-bottom: 3.625em; }
+  #application .application__form-header-text {
+    font-weight: 500;
+    font-size: 1.5rem; }
+#application .application__form-content {
+  background: #F3F3F3; }
+  #application .application__form-content-tablist-item {
+    gap: 0.8em; }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)

@@ -17,3 +17,10 @@ a {
     background-color: $clr-primary;
     border-color: $clr-primary;
 }
+
+.container-fluid-padding {
+    @include for-large-devices {
+        padding-left: 4em !important;
+        padding-right: 4em !important;
+    }
+}

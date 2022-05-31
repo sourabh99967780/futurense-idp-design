@@ -1,0 +1,23 @@
+#application {
+    .application__form {
+        &-header {
+            padding-top: 3.625em;
+            padding-bottom: 3.625em;
+
+            &-text {
+                font-weight: $fw-metropolis-medium;
+                font-size: 1.5rem;
+            }
+        }
+
+        &-content {
+            background: $clr-gray;
+
+            &-tablist {
+                &-item {
+                    gap: 0.8em;
+                }
+            }
+        }
+    }
+}
