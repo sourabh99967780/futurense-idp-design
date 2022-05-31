@@ -8,7 +8,7 @@
     width: 100%;
   }
   .intro-text h1 {
-    color: #fff;
+    color: $clr-white;
     text-align: left;
     max-width: 638px;
     width: 100%;
@@ -16,7 +16,7 @@
   }
   .intro-text {
     p {
-      color: #fff;
+      color: $clr-white;
       text-align: left;
       font-size: 1rem;
     }
@@ -29,12 +29,12 @@
     width: 100%;
   }
   .duration-wrap span {
-    color: #a0a0a0;
+    color: $clr-footer-link;
     display: block;
     font-size: 0.5rem;
   }
   .duration-wrap p {
-    color: #fff;
+    color: $clr-white;
     font-size: 0.625rem;
   }
   .banner-btn button {
@@ -43,12 +43,12 @@
   .content h2 {
     font-size: 1.625em;
     font-weight: $fw-metropolis-medium;
-    color: #202020;
+    color: $clr-filler;
   }
   .content p {
     font-size: 14px;
-    font-weight: 300;
-    color: #202020;
+    font-weight: $fw-metropolis-light;
+    color: $clr-filler;
   }
   .content {
     order: 2;
@@ -64,17 +64,17 @@
       }
   }
   .pro_wrap {
-    background-color: #fdba2f;
+    background-color: $clr-secondary;
     border-radius: 3px;
     padding: 11px 6px;
   }
   .pro_wrap a {
-    color: #202020;
+    color: $clr-filler;
   }
   .sub-content p {
     font-size: 14px;
-    font-weight: 300;
-    color: #202020;
+    font-weight: $fw-metropolis-light;
+    color: $clr-filler;
   }
   .content h2 {
     border-bottom: 0.30000001192092896px solid #2020203d;
@@ -83,7 +83,7 @@
   .card-content {
     max-width: 28em;
     width: 100%;
-    background-color: #fff;
+    background-color: $clr-white;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     max-height: 40em;
     margin-top: 2em;
@@ -101,29 +101,29 @@
     width: 100%;
   }
   .pro_wrap {
-    background-color: #fdba2f;
+    background-color: $clr-secondary;
     border-radius: 3px;
     padding: 0 11px;
     max-height: 26px;
     align-self: center;
   }
   .pro_wrap a {
-    color: #202020;
+    color: $clr-filler;
     font-size: 12px;
     font-weight: $fw-metropolis-medium;
   }
   .price span {
     font-size: 40px;
-    font-weight: bold;
-    color: #202020;
+    font-weight: $fw-metropolis-bold;
+    color: $clr-filler;
   }
   .card-apply button {
     width: 100%;
   }
   .card-enroll button {
     width: 100%;
-    background-color: #fdba2f;
-    font-weight: 600;
+    background-color: $clr-secondary;
+    font-weight: $fw-metropolis-semi-bold;
     border: none;
   }
   .sub-content {
@@ -140,23 +140,22 @@
   }
   .sub-content span {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: $fw-metropolis-light;
   }
   .arrow-icon {
-    color: #fdba2f !important;
+    color: $clr-secondary !important;
     font-size: 1.5rem !important;
   }
   .time-icon {
-    color: #81d0d3 !important;
+    color: $clr-primary !important;
     font-size: 1.5rem !important;
   }
   .stop-icon {
-    color: #ff7901 !important;
+    color: $clr-accent-red !important;
     font-size: 1.5rem !important;
   }
   .material-icons {
     font-family: "Material Icons";
-    font-weight: normal;
     font-style: normal;
     font-size: 24px;
     line-height: 1;
