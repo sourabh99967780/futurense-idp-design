@@ -1,26 +1,102 @@
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+html {
+    font-family: $ff-metropolis;
 }
 
 .input-group .position-absolute {
-    z-index: 5;
+  z-index: 5;
 }
 
-#marketing .courses__pagination .page-item.active .page-link, #browse-courses .courses__pagination .page-item.active .page-link {
-    color: $clr-white;
-    background-color: $clr-primary;
-    border-color: $clr-primary;
+#marketing .courses__pagination .page-item.active .page-link,
+#browse-courses .courses__pagination .page-item.active .page-link {
+  color: $clr-white;
+  background-color: $clr-primary;
+  border-color: $clr-primary;
 }
 
 .container-fluid-padding {
-    @include for-large-devices {
-        padding-left: 4em !important;
-        padding-right: 4em !important;
+  @include for-large-devices {
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+  }
+}
+
+.iti__flag {background-image: url("../../node_modules/intl-tel-input/build/img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("../../node_modules/intl-tel-input/build/img/flags@2x.png");}
+}
+
+.form-pane {
+    border: 1px solid $clr-gray;
+    position: relative;
+
+    &-heading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: $clr-gray;
+        padding: 0.5em 1em;
+        border-radius: 0 0 5px 5px;
     }
+
+    &-fields {
+        padding: 3.5em 1em 1em 1em;
+    }
+}
+
+.form-pane + .form-pane {
+    margin-top: 1em;
+}
+
+.field-required {
+    color: $clr-accent-red;
+}
+
+.form-upload {
+    border: 0.5px solid $clr-filler;
+    height: auto !important;
+    padding-top: 3.25em;
+    padding-bottom: 3.25em;
+
+    &-text {
+        margin-bottom: 1em;
+    }
+}
+
+.btn-primary {
+    &-outline {
+        border: 1px solid $clr-primary;
+        color: $clr-primary;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        background-color: transparent;
+        padding: 0.375rem 2.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        &:hover {
+            color: $clr-white;
+            background-color: $clr-primary;
+        }
+    }
+}
+
+.form-action-buttons {
+    gap: 1em;
 }

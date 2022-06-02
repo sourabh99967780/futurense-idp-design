@@ -11,13 +11,170 @@
         }
 
         &-content {
-            background: $clr-gray;
+            @include for-large-devices {
+                background: $clr-gray;
+            }
+
+            .profile {
+                .section-right--fields {
+                    border-left: unset;
+                }
+            }
+
+            .identity {
+                .section-right--fields {
+                    border-left: unset;
+                }
+            }
+
+            .sign-submit {
+                .section-right--fields {
+                    border-left: unset;
+                }
+            }
+
+            .education-details {
+                .section-right--fields {
+                    border-left: unset;
+                }
+            }
+
+            .professional-details {
+                .section-right--fields {
+                    border-left: unset;
+                }
+            }
 
             &-tablist {
+                border: none;
+
                 &-item {
-                    gap: 0.8em;
+                    padding: unset;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.8em;
+                        padding: 0.75rem 1.25rem;
+                    }
+
+                    .nav-link {
+                        color: $clr-filler;
+                    }
+
+                    .nav-link.active {
+                        color: $clr-white;
+                        border: none;
+                        background-color: $clr-primary;
+                    }
+                }
+            }
+
+            &-details {
+                &--section {
+                    background: $clr-white;
+                    padding: 2em 1em;
+
+                    @include for-large-devices {
+                        padding: 4.0625em 5.625em;
+                    }
+
+                    &-left {
+                        @include for-large-devices {
+                            padding-right: 2em;
+                        }
+
+                        .section-left {
+                            &--heading {
+                                font-weight: $fw-metropolis-medium;
+                                font-size: 1.875rem;
+                                margin-bottom: 0.6em;
+                            }
+
+                            &--subheading {
+                                font-weight: $fw-metropolis-medium;
+                                color: $clr-footer-link;
+                            }
+                        }
+                    }
+
+                    &-right {
+                        @include for-large-devices {
+                            padding-left: 2em;
+                        }
+
+                        .section-right {
+                            &--image {
+                                input {
+                                    visibility: hidden;
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                }
+
+                                &-upload {
+                                    label {
+                                        gap: 0.5em;
+                                    }
+                                }
+                            }
+
+                            &--fields {
+                                .field-section > a {
+                                    text-decoration: none;
+                                    margin-bottom: 1em;
+                                }
+
+                                .form-upload {
+                                    .form-upload-subtext {
+                                        font-size: 0.8rem;
+                                        margin-bottom: 0.5em;
+                                    }
+                                }
+
+                                .agreement {
+                                    input[type="checkbox"] {
+                                        margin-right: 0.5em;
+                                    }
+                                }
+
+                                border-left: 1px solid $clr-gray;
+
+                                .form-group {
+                                    input, select, textarea {
+                                        border: 0.5px solid $clr-filler;
+                                        background-color: $clr-white;
+                                    }
+
+                                    input[type="file"] {
+                                        visibility: hidden;
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        right: 0;
+                                    }
+                                }
+
+                                .experience-section {
+                                    &-title {
+                                        font-weight: $fw-metropolis-medium;
+                                        font-size: 1.3rem;
+                                        margin-top: 2em;
+                                        margin-bottom: 0.5em;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+.application__form-content-details--section + .application__form-content-details--section {
+    margin-top: 1em;
 }
