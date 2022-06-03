@@ -17,6 +17,7 @@
         top: 20px;
         left: 5px;
         background: transparent;
+        z-index: 100;
 
         &:hover {
             background: $clr-gray;
@@ -298,6 +299,11 @@
             }
 
             .external__links {
+                justify-content: center;
+
+                @include for-medium-devices {
+                    justify-content: unset;
+                }
                 gap: 1em;
 
                 &::-webkit-scrollbar {

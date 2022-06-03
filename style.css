@@ -78,8 +78,14 @@ html {
 .form-action-buttons {
   gap: 1em; }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100; }
+
 .navbar {
-  font-family: "Metropolis"; }
+  font-family: "Metropolis";
+  background-color: #ffffff; }
   .navbar a {
     color: #202020;
     transition: color ease-in-out 200ms;
@@ -798,7 +804,8 @@ html {
   position: fixed;
   top: 20px;
   left: 5px;
-  background: transparent; }
+  background: transparent;
+  z-index: 100; }
   #dashboard .toggle-icon:hover {
     background: #F3F3F3; }
   @media (min-width: 768px) {
@@ -956,7 +963,11 @@ html {
   #dashboard .dashboard__left .courses__content-list--item .card:hover {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
 #dashboard .dashboard__left .external__links {
+  justify-content: center;
   gap: 1em; }
+  @media (min-width: 768px) {
+    #dashboard .dashboard__left .external__links {
+      justify-content: unset; } }
   #dashboard .dashboard__left .external__links::-webkit-scrollbar {
     display: none; }
   @media (min-width: 768px) {
