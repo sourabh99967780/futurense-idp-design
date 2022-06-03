@@ -863,6 +863,8 @@ html {
   @media (min-width: 992px) {
     #dashboard .dashboard__left .courses__content .card {
       width: 22em !important; } }
+#dashboard .dashboard__left .courses__content-image-wrapper img {
+  max-height: 12em; }
 @media (min-width: 992px) {
   #dashboard .dashboard__left .courses__content-list {
     gap: 1em; } }
@@ -881,7 +883,9 @@ html {
     font-weight: 600;
     font-size: 1.25rem; }
   #dashboard .dashboard__left .courses__content-list--item .card-text {
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    max-height: 6em;
+    overflow: auto; }
   #dashboard .dashboard__left .courses__content-list--item .card-date {
     align-items: center;
     gap: 0.5em; }

@@ -119,6 +119,12 @@
                             width: 22em !important;
                         }
                     }
+
+                    &-image-wrapper {
+                        img {
+                            max-height: 12em;
+                        }
+                    }
         
                     &-list {
                         @include for-large-devices {
@@ -155,6 +161,8 @@
         
                                 &-text {
                                     font-size: 0.875rem;
+                                    max-height: 6em;
+                                    overflow: auto;
                                 }
         
                                 &-date {
