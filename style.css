@@ -843,7 +843,8 @@ html {
     top: 0;
     left: -300px;
     z-index: 20;
-    transition: all ease-in-out 200ms; }
+    transition: all ease-in-out 200ms;
+    height: 100%; }
 #dashboard .dashboard__left-salutation {
   font-weight: 400;
   font-size: 1.375em;
