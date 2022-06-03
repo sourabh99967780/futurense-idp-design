@@ -363,7 +363,8 @@ html {
 #footer {
   background: #202020;
   color: #ffffff;
-  margin-top: auto; }
+  margin-top: auto;
+  transition: all ease-in-out 200ms; }
   #footer .footer-main .footer-logo img {
     height: 3.875em;
     width: auto; }
@@ -783,6 +784,266 @@ html {
 
 .application__form-content-details--section + .application__form-content-details--section {
   margin-top: 1em; }
+
+#dashboard .main-content {
+  position: relative; }
+#dashboard .page-content {
+  padding-left: 0px;
+  transition: all ease-in-out 200ms; }
+#dashboard .toggle-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  position: fixed;
+  top: 20px;
+  left: 5px;
+  background: transparent; }
+  #dashboard .toggle-icon:hover {
+    background: #F3F3F3; }
+  @media (min-width: 768px) {
+    #dashboard .toggle-icon {
+      top: 34px;
+      left: 10px; } }
+  #dashboard .toggle-icon span {
+    height: 2px;
+    width: 16px;
+    background-color: #202020;
+    transition: all ease-in-out 200ms; }
+#dashboard .sidebar {
+  background: #ffffff;
+  border-right: 1px solid #F3F3F3;
+  height: 100vh; }
+  #dashboard .sidebar-menu {
+    padding: 1.125em;
+    padding-top: 2.5em; }
+    @media (min-width: 768px) {
+      #dashboard .sidebar-menu {
+        padding: 3.125em; } }
+    #dashboard .sidebar-menu--item {
+      margin-bottom: 1.625em;
+      border-radius: 5px; }
+      #dashboard .sidebar-menu--item a {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        text-decoration: none;
+        color: #A0A0A0;
+        padding: 8px 15px;
+        transition: all ease-in-out 200ms; }
+        #dashboard .sidebar-menu--item a:hover {
+          color: #202020; }
+    #dashboard .sidebar-menu--item.active {
+      background: #202020 !important; }
+      #dashboard .sidebar-menu--item.active a {
+        color: #ffffff !important; }
+  #dashboard .sidebar-wrapper {
+    width: 260px;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    z-index: 20;
+    transition: all ease-in-out 200ms; }
+#dashboard .dashboard__left-salutation {
+  font-weight: 400;
+  font-size: 1.375em;
+  margin-bottom: 1.75em; }
+#dashboard .dashboard__left .program {
+  border-bottom: 1px solid #F3F3F3; }
+  #dashboard .dashboard__left .program__heading-title {
+    font-size: 1.375em;
+    font-weight: 700; }
+  #dashboard .dashboard__left .program__heading-link {
+    text-decoration: none; }
+#dashboard .dashboard__left .courses__content .card {
+  border: 1px solid rgba(150, 150, 150, 0.15);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+  @media (min-width: 992px) {
+    #dashboard .dashboard__left .courses__content .card {
+      width: 22em !important; } }
+@media (min-width: 992px) {
+  #dashboard .dashboard__left .courses__content-list {
+    gap: 1em; } }
+#dashboard .dashboard__left .courses__content-list--item .card {
+  transition: box-shadow ease-in-out 200ms;
+  cursor: pointer; }
+  #dashboard .dashboard__left .courses__content-list--item .card-meta--text {
+    color: #679BA5;
+    background: rgba(110, 191, 195, 0.1);
+    padding: 0.5em 1.25em;
+    font-weight: 500; }
+  #dashboard .dashboard__left .courses__content-list--item .card-meta--price {
+    font-weight: 600; }
+  #dashboard .dashboard__left .courses__content-list--item .card-title {
+    font-family: "Metropolis";
+    font-weight: 600;
+    font-size: 1.25rem; }
+  #dashboard .dashboard__left .courses__content-list--item .card-text {
+    font-size: 0.875rem; }
+  #dashboard .dashboard__left .courses__content-list--item .card-date {
+    align-items: center;
+    gap: 0.5em; }
+    #dashboard .dashboard__left .courses__content-list--item .card-date .date-start .card-date-icon {
+      color: #FDBA2F;
+      background: rgba(253, 186, 47, 0.15); }
+    #dashboard .dashboard__left .courses__content-list--item .card-date .date-end .card-date-icon {
+      color: #FF7901;
+      background: rgba(255, 121, 1, 0.15); }
+    #dashboard .dashboard__left .courses__content-list--item .card-date-icon {
+      padding: 4px; }
+    #dashboard .dashboard__left .courses__content-list--item .card-date-text {
+      font-weight: 500; }
+      #dashboard .dashboard__left .courses__content-list--item .card-date-text p {
+        margin: 0;
+        padding: 0; }
+      #dashboard .dashboard__left .courses__content-list--item .card-date-text-key {
+        font-size: 0.625rem;
+        color: #A0A0A0; }
+      #dashboard .dashboard__left .courses__content-list--item .card-date-text-value {
+        font-size: 0.875rem; }
+  #dashboard .dashboard__left .courses__content-list--item .card-duration {
+    gap: 0.5em; }
+    #dashboard .dashboard__left .courses__content-list--item .card-duration-icon {
+      color: #6EBFC3;
+      background: rgba(110, 191, 195, 0.15);
+      padding: 4px; }
+      #dashboard .dashboard__left .courses__content-list--item .card-duration-icon span {
+        width: 1em; }
+    #dashboard .dashboard__left .courses__content-list--item .card-duration-text {
+      font-weight: 500; }
+      #dashboard .dashboard__left .courses__content-list--item .card-duration-text p {
+        margin: 0;
+        padding: 0; }
+      #dashboard .dashboard__left .courses__content-list--item .card-duration-text-key {
+        font-size: 0.625rem;
+        color: #A0A0A0; }
+      #dashboard .dashboard__left .courses__content-list--item .card-duration-text-value {
+        font-size: 0.875rem; }
+  #dashboard .dashboard__left .courses__content-list--item .card-buttons {
+    gap: 0.8em;
+    font-family: "Metropolis";
+    font-size: 0.75rem; }
+    #dashboard .dashboard__left .courses__content-list--item .card-buttons-apply {
+      color: #6EBFC3;
+      background: transparent;
+      border: 3px solid #6EBFC3;
+      font-weight: 600;
+      transition: all ease-in-out 200ms; }
+      #dashboard .dashboard__left .courses__content-list--item .card-buttons-apply:hover {
+        color: #ffffff;
+        background: #6EBFC3; }
+    #dashboard .dashboard__left .courses__content-list--item .card-buttons-question {
+      color: #ffffff;
+      font-weight: 600; }
+  #dashboard .dashboard__left .courses__content-list--item .card:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
+#dashboard .dashboard__left .external__links {
+  gap: 1em; }
+  #dashboard .dashboard__left .external__links .competency {
+    background: transparent linear-gradient(90deg, rgba(253, 186, 47, 0.3) 0%, rgba(216, 155, 29, 0.3) 100%) 0% 0% no-repeat padding-box; }
+    #dashboard .dashboard__left .external__links .competency .external__links-card--bgimage {
+      position: absolute;
+      bottom: -1.8125em;
+      right: -1.125em; }
+  #dashboard .dashboard__left .external__links .leaderboard {
+    background: transparent linear-gradient(90deg, rgba(110, 191, 195, 0.3) 0%, rgba(30, 127, 132, 0.3) 100%) 0% 0% no-repeat padding-box; }
+    #dashboard .dashboard__left .external__links .leaderboard .external__links-card--bgimage {
+      position: absolute;
+      bottom: 1em;
+      right: 1em; }
+  #dashboard .dashboard__left .external__links .reports {
+    background: transparent linear-gradient(298deg, rgba(255, 121, 1, 0.3) 0%, rgba(255, 121, 1, 0.3) 36%, rgba(253, 186, 47, 0.3) 100%) 0% 0% no-repeat padding-box; }
+    #dashboard .dashboard__left .external__links .reports .external__links-card--bgimage {
+      position: absolute;
+      bottom: -3em;
+      right: -1em; }
+  #dashboard .dashboard__left .external__links .badges {
+    background: transparent linear-gradient(298deg, rgba(255, 121, 1, 0.3) 0%, rgba(104, 47, 253, 0.3) 36%, rgba(253, 186, 47, 0.3) 100%) 0% 0% no-repeat padding-box; }
+  #dashboard .dashboard__left .external__links-card {
+    padding: 1.25em;
+    min-width: 20.625em;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: all ease-in-out 200ms; }
+    #dashboard .dashboard__left .external__links-card:hover {
+      box-shadow: inset 2px 2px 2px #00000029; }
+    #dashboard .dashboard__left .external__links-card--heading {
+      font-weight: 700;
+      font-weight: 1.125rem;
+      color: #202020; }
+    #dashboard .dashboard__left .external__links-card--subheading {
+      font-weight: 400;
+      font-size: 0.75rem;
+      max-width: 60%;
+      margin-bottom: 2.5em;
+      color: #202020; }
+    #dashboard .dashboard__left .external__links-card--link {
+      width: 2em;
+      height: 2em;
+      color: #202020;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 2px 2px 2px #00000029; }
+#dashboard .dashboard__right .explore {
+  position: relative;
+  border: 1px solid #F3F3F3; }
+  #dashboard .dashboard__right .explore__img {
+    height: 12em;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 8px 8px 20px #00000029;
+    border-radius: 10px; }
+    #dashboard .dashboard__right .explore__img img {
+      width: 70%;
+      height: auto; }
+  #dashboard .dashboard__right .explore__content {
+    padding: 1.75em 1.375em;
+    width: 80%; }
+    #dashboard .dashboard__right .explore__content-heading {
+      font-weight: 800;
+      font-size: 1.125em; }
+    #dashboard .dashboard__right .explore__content-subheading {
+      font-weight: 500;
+      font-size: 0.75em;
+      margin-bottom: 2.25em; }
+    #dashboard .dashboard__right .explore__content-action {
+      text-decoration: none;
+      color: #202020;
+      display: flex;
+      align-items: center;
+      gap: 0.5em; }
+      #dashboard .dashboard__right .explore__content-action p {
+        padding: 0;
+        margin: 0;
+        font-weight: 700; }
+      #dashboard .dashboard__right .explore__content-action span {
+        color: #6EBFC3; }
+
+#dashboard.sidebar-toggled .toggle-icon span:nth-child(2) {
+  display: none; }
+#dashboard.sidebar-toggled .toggle-icon span:first-child {
+  transform: rotate(45deg);
+  transform-origin: 5px 0px; }
+#dashboard.sidebar-toggled .toggle-icon span:last-child {
+  transform: rotate(-45deg);
+  transform-origin: 5px 2px; }
+#dashboard.sidebar-toggled .sidebar-wrapper {
+  left: 0; }
+#dashboard.sidebar-toggled .page-content {
+  padding-left: 0px; }
+  @media (min-width: 768px) {
+    #dashboard.sidebar-toggled .page-content {
+      padding-left: 260px; } }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)

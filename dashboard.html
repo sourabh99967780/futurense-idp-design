@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/fonts/gilroy/stylesheet.css" />
+  <link rel="stylesheet" href="assets/fonts/metropolis/stylesheet.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Futurense - Dashboard</title>
+</head>
+
+<body id="dashboard" class="sidebar-toggled">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container-fluid mx-4">
+          <a href="index.html" class="navbar-brand d-none d-sm-block">
+            <img src="assets/img/futurense_logo.svg" alt="Futurense" width="110" />
+          </a>
+          <a href="index.html" class="navbar-brand d-sm-none flex-shrink-0 me-2">
+            <img src="assets/img/futurense_logo.svg" alt="Futurense" width="74" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex d-lg-none input-group mx-lg-5 my-3 order-1 order-lg-2">
+              <input class="form-control pl-5" type="text" placeholder="Search for products" />
+              <span class="material-icons alt-search ml-3 position-absolute translate-middle-y text-muted fs-base">
+                search
+              </span>
+              <span class="material-icons act-tune mr-3 position-absolute translate-middle-y fs-base">
+                tune
+              </span>
+            </div>
+            <a href="/browse-courses.html"
+              class="browse-courses-link mobile-nav-link nav-link flex-shrink-0 mx-lg-3 my-2 order-lg-1 order-2 d-flex justify-content-between">
+              <div class="flex-shrink-0 mx-lg-3">Browse Courses</div>
+              <span class="d-sm-none d-flex align-items-center material-icons">
+                arrow_forward_ios
+              </span>
+            </a>
+            <div class="d-none d-lg-flex input-group mx-lg-5 my-2 order-1 order-lg-2">
+              <input class="form-control pl-5" type="text" placeholder="Search for products" />
+              <span class="material-icons alt-search ml-3 position-absolute translate-middle-y text-muted fs-base">
+                search
+              </span>
+              <span class="material-icons act-tune mr-3 position-absolute translate-middle-y fs-base">
+                tune
+              </span>
+            </div>
+            <a href="/login.html"
+              class="login-link mobile-nav-link nav-link flex-shrink-0 mx-lg-3 d-flex justify-content-between order-3">
+              <div class="flex-shrink-0 mx-lg-3">Login</div>
+              <span class="d-sm-none d-flex align-items-center material-icons">
+                arrow_forward_ios
+              </span>
+            </a>
+            <button class="signup-nav-btn nav-link btn btn-primary flex-shrink-0 px-4 order-4 w-sm-100 my-3">
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <a id="toggle-sidebar" class="btn btn-sm toggle-icon show" href="#">
+        <span class="upper"></span>
+        <span class="middle"></span>
+        <span class="lower"></span>
+      </a>
+
+      <nav class="sidebar sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-menu">
+            <ul class="list-unstyled">
+              <li class="sidebar-menu--item active">
+                <a href="#">
+                  <span class="material-icons">
+                    dashboard
+                  </span>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-menu--item">
+                <a href="#">
+                  <span class="material-icons">
+                    article
+                  </span>
+                  <span>Applications</span>
+                </a>
+              </li>
+              <li class="sidebar-menu--item">
+                <a href="#">
+                  <span class="material-icons">
+                    credit_card
+                  </span>
+                  <span>Payments</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-content  -->
+      </nav>
+
+      <main class="page-content">
+        <div class="container-fluid px-md-5 pt-md-5 py-5">
+          <div class="row">
+            <div class="col-md-9 dashboard__left">
+              <h5 class="dashboard__left-salutation">Welcome Silvester</h5>
+              <div class="row">
+                <div class="col-md-12 program">
+                  <div class="program__heading d-flex justify-content-between">
+                    <h6 class="program__heading-title">Programs</h6>
+                    <a href="#" class="program__heading-link">View All</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row courses__content">
+                <ul class="courses__content-list list-unstyled mt-4 col-lg-12 flex-wrap d-flex justify-content-between">
+                  <li class="courses__content-list--item">
+                    <div class="card">
+                      <div class="courses__content-image-wrapper">
+                        <img src="assets/img/marketing/courses/course_alt.jpg" class="card-img-top" alt="Course Image">
+                      </div>
+                      <div class="card-body">
+                        <div class="card-meta d-flex justify-content-between align-items-center mb-3">
+                          <div class="card-meta--text">Design</div>
+                          <div class="card-meta--price">₹ <spanc class="card-meta--price-value">3600</span></div>
+                        </div>
+                        <h5 class="card-title">The Complete Web Design course</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                        <div class="card-date d-flex justify-content-between">
+                          <div class="card-date d-flex date-start">
+                            <div class="card-date-icon d-flex align-items-center justify-content-center">
+                              <span class="material-icons">
+                                play_arrow
+                              </span>
+                            </div>
+                            <div class="card-date-text">
+                              <p class="card-date-text-key date-key">Start Date</p>
+                              <p class="card-date-text-value date-value">15 Jan 2022</p>
+                            </div>
+                          </div>
+                          <div class="card-date d-flex date-end">
+                            <div class="card-date-icon d-flex align-items-center justify-content-center">
+                              <span class="material-icons">
+                                stop_circle
+                              </span>
+                            </div>
+                            <div class="card-date-text">
+                              <p class="card-date-text-key date-key">End Date</p>
+                              <p class="card-date-text-value date-value">15 Jan 2022</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-duration d-flex align-items-center mt-2">
+                          <div class="card-duration-icon d-flex align-items-center justify-content-center">
+                            <span class="material-icons">
+                              timer_black
+                            </span>
+                          </div>
+                          <div class="card-duration-text">
+                            <p class="card-duration-text-key duration-key">Duration</p>
+                            <p class="card-duration-text-value duration-value">10 Days</p>
+                          </div>
+                        </div>
+                        <div class="card-buttons d-flex my-4">
+                          <button class="custom-btn btn card-buttons-apply">Apply Now</button>
+                          <button class="btn btn-secondary card-buttons-question">Have a question?</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="courses__content-list--item">
+                    <div class="card">
+                      <div class="courses__content-image-wrapper">
+                        <img src="assets/img/marketing/courses/course_alt-2.jpg" class="card-img-top" alt="Course Image">
+                      </div>
+                      <div class="card-body">
+                        <div class="card-meta d-flex justify-content-between align-items-center mb-3">
+                          <div class="card-meta--text">Design</div>
+                          <div class="card-meta--price">₹ <spanc class="card-meta--price-value">3600</span></div>
+                        </div>
+                        <h5 class="card-title">The Complete Web Design course</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                        <div class="card-date d-flex justify-content-between">
+                          <div class="card-date d-flex date-start">
+                            <div class="card-date-icon d-flex align-items-center justify-content-center">
+                              <span class="material-icons">
+                                play_arrow
+                              </span>
+                            </div>
+                            <div class="card-date-text">
+                              <p class="card-date-text-key date-key">Start Date</p>
+                              <p class="card-date-text-value date-value">15 Jan 2022</p>
+                            </div>
+                          </div>
+                          <div class="card-date d-flex date-end">
+                            <div class="card-date-icon d-flex align-items-center justify-content-center">
+                              <span class="material-icons">
+                                stop_circle
+                              </span>
+                            </div>
+                            <div class="card-date-text">
+                              <p class="card-date-text-key date-key">End Date</p>
+                              <p class="card-date-text-value date-value">15 Jan 2022</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-duration d-flex align-items-center mt-2">
+                          <div class="card-duration-icon d-flex align-items-center justify-content-center">
+                            <span class="material-icons">
+                              timer_black
+                            </span>
+                          </div>
+                          <div class="card-duration-text">
+                            <p class="card-duration-text-key duration-key">Duration</p>
+                            <p class="card-duration-text-value duration-value">10 Days</p>
+                          </div>
+                        </div>
+                        <div class="card-buttons d-flex my-4">
+                          <button class="custom-btn btn card-buttons-apply">Apply Now</button>
+                          <button class="btn btn-secondary card-buttons-question">Have a question?</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="courses__content-list--item">
+                    <div class="card">
+                      <img src="assets/img/marketing/courses/course_alt-3.jpg" class="card-img-top" alt="Course Image">
+                      <div class="card-body">
+                        <div class="card-meta d-flex justify-content-between align-items-center mb-3">
+                          <div class="card-meta--text">Design</div>
+                          <div class="card-meta--price">₹ <spanc class="card-meta--price-value">3600</span></div>
+                        </div>
+                        <h5 class="card-title">The Complete Web Design course</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                        <div class="card-date d-flex justify-content-between">
+                          <div class="card-date d-flex date-start">
+                            <div class="card-date-icon d-flex align-items-center justify-content-center">
+                              <span class="material-icons">
+                                play_arrow
+                              </span>
+                            </div>
+                            <div class="card-date-text">
+                              <p class="card-date-text-key date-key">Start Date</p>
+                              <p class="card-date-text-value date-value">15 Jan 2022</p>
+                            </div>
+                          </div>
+                          <div class="card-date d-flex date-end">
+                            <div class="card-date-icon d-flex align-items-center justify-content-center">
+                              <span class="material-icons">
+                                stop_circle
+                              </span>
+                            </div>
+                            <div class="card-date-text">
+                              <p class="card-date-text-key date-key">End Date</p>
+                              <p class="card-date-text-value date-value">15 Jan 2022</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-duration d-flex align-items-center mt-2">
+                          <div class="card-duration-icon d-flex align-items-center justify-content-center">
+                            <span class="material-icons">
+                              timer_black
+                            </span>
+                          </div>
+                          <div class="card-duration-text">
+                            <p class="card-duration-text-key duration-key">Duration</p>
+                            <p class="card-duration-text-value duration-value">10 Days</p>
+                          </div>
+                        </div>
+                        <div class="card-buttons d-flex my-4">
+                          <button class="custom-btn btn card-buttons-apply">Apply Now</button>
+                          <button class="btn btn-secondary card-buttons-question">Have a question?</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="row external__links">
+                <a href="#" class="external__links-card competency">
+                  <h6 class="external__links-card--heading">
+                    Competency Profile
+                  </h6>
+                  <p class="external__links-card--subheading">
+                    Track your skills with competency profile
+                  </p>
+                  <div class="external__links-card--link">
+                    <span class="material-icons">
+                      chevron_right
+                    </span>
+                  </div>
+                  <img class="external__links-card--bgimage" src="assets/img/dashboard/competency.svg" alt="competency">
+                </a>
+                <a href="#" class="external__links-card leaderboard">
+                  <h6 class="external__links-card--heading">
+                    Leaderboard
+                  </h6>
+                  <p class="external__links-card--subheading">
+                    Stay ahead of the curve with certainty
+                  </p>
+                  <div class="external__links-card--link">
+                    <span class="material-icons">
+                      chevron_right
+                    </span>
+                  </div>
+                  <img class="external__links-card--bgimage" src="assets/img/dashboard/leaderboard.svg" alt="competency">
+                </a>
+                <a href="#" class="external__links-card reports">
+                  <h6 class="external__links-card--heading">
+                    Reports
+                  </h6>
+                  <p class="external__links-card--subheading">
+                    Assess your performance for betterment
+                  </p>
+                  <div class="external__links-card--link">
+                    <span class="material-icons">
+                      chevron_right
+                    </span>
+                  </div>
+                  <img class="external__links-card--bgimage" src="assets/img/dashboard/reports.svg" alt="competency">
+                </a>
+                <a href="#" class="external__links-card badges">
+                  <h6 class="external__links-card--heading">
+                    Badges
+                  </h6>
+                  <p class="external__links-card--subheading">
+                    All the badges honour your performance.
+                  </p>
+                  <div class="external__links-card--link">
+                    <span class="material-icons">
+                      chevron_right
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 dashboard__right">
+              <div class="explore">
+                <div class="explore__img">
+                  <img src="assets/img/dashboard/explore.svg" alt="explore programs">
+                </div>
+                <div class="explore__content">
+                  <div class="explore__content-heading">
+                    Upgrade your skills with our latest courses
+                  </div>
+                  <div class="explore__content-subheading">
+                    We have recently updated and added 50+ courses
+                  </div>
+                  <a href="#" class="explore__content-action">
+                    <p>Explore Programs</p>
+                    <span class="material-icons clr-primary">keyboard_double_arrow_right</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </main>
+
+    <footer id="footer">
+      <div class="container-fluid py-4 p-lg-5">
+        <div class="footer-main">
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="infoarea">
+                <a href="index.html" class="footer-logo pl-3 row">
+                  <img src="assets/img/futurense-logo-white.svg" alt="Futurense">
+                </a>
+                <div class="reachus_combine mt-5 row flex-column pl-3">
+                  <h5 class="reachus_at_text">Reach us at</h5>
+                  <a class="reachus_at_info text-secondary" href="mailto:info@futurense.com"> info@futurense.com </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="foot-links my-3 my-lg-0">
+                <h5 class="foot-links-heading">Courses</h5>
+                <ul class="list-unstyled foot-links-list">
+                  <li class="">
+                    <a href="#">Kickstarter Courses</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Executive Programs</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Futurense Bootcamps</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="foot-links my-3 my-lg-0">
+                <h5 class="foot-links-heading">Categories</h5>
+                <ul class="list-unstyled foot-links-list">
+                  <li class="">
+                    <a href="#">Technical</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Management</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Design</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Programming</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <h5 class="foot-links-heading my-3 my-lg-0">
+                <a href="Privacy Policy">Privacy Policy</a>
+              </h5>
+            </div>
+            <div class="col-lg-2">
+              <h5 class="foot-links-heading my-3 my-lg-0">
+                <a href="Terms of Service">Terms of Service</a>
+              </h5>
+            </div>
+            <div class="col-lg-2">
+              <div class="foot-links my-3 my-lg-0">
+                <h5 class="foot-links-heading">Stay up to date with new Skills</h5>
+                <p class="foot-links-subtext mb-lg-5">Pick and course and start a new journey towards growth.</p>
+                <div class="newsletter mt-3">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Email address"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"><span class="material-icons">
+                            send
+                          </span></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-foot row pt-4">
+          <div class="copyright col-lg-12 text-center">Copyright © 2022 Futurense . All rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>
