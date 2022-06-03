@@ -45,11 +45,11 @@
             padding-top: 2.5em;
 
             @include for-medium-devices {
-                padding: 3.125em;
+                padding: 1.5em;
             }
 
             &--item {
-                margin-bottom: 1.625em;
+                margin-bottom: 1em;
                 border-radius: 5px;
 
                 a {
@@ -228,28 +228,54 @@
                                         }
                                     }
                                 }
+
+                                &-task {
+                                    gap: 0.5em;
         
-                                &-buttons {
-                                    gap: 0.8em;
-                                    font-family: $ff-gilroy;
-                                    font-size: 0.75rem;
+                                    &-icon {
+                                        color: $clr-electric-blue;
+                                        background: rgba($clr-electric-blue, 0.15);
+                                        padding: 4px;
         
-                                    &-apply {
-                                        color: $clr-primary;
-                                        background: transparent;
-                                        border: 3px solid $clr-primary;
-                                        font-weight: $fw-gilroy-semibold;
-                                        transition: all ease-in-out 200ms;
-        
-                                        &:hover {
-                                            color: $clr-white;
-                                            background: $clr-primary;
+                                        span {
+                                            width: 1em;
                                         }
                                     }
         
-                                    &-question {
-                                        color: $clr-white;
-                                        font-weight: $fw-gilroy-semibold;
+                                    &-text {
+                                        font-weight: $fw-metropolis-medium;
+        
+                                        p {
+                                            margin: 0;
+                                            padding: 0;
+                                        }
+        
+                                        &-key {
+                                            font-size: 0.625rem;
+                                            color: $clr-footer-link;
+                                        }
+        
+                                        &-value {
+                                            font-size: 0.875rem;
+                                        }
+                                    }
+                                }
+        
+                                &-continue-link {
+                                    display: flex;
+                                    align-items: center;
+                                    text-decoration: none;
+                                    transition: all ease-in-out 200ms;
+
+                                    &--text {
+                                        font-weight: $fw-metropolis-bold;
+                                        font-size: 0.85em;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    &--icon {
+
                                     }
                                 }
         
@@ -264,6 +290,16 @@
 
             .external__links {
                 gap: 1em;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                
+                @include for-medium-devices {
+                    flex-wrap: nowrap;
+                    overflow: auto;
+                }
+
                 .competency {
                     background: transparent linear-gradient(90deg, rgba($clr-secondary, 0.3) 0%, rgba(#D89B1D, 0.3) 100%) 0% 0% no-repeat padding-box;
 

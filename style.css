@@ -819,9 +819,9 @@ html {
     padding-top: 2.5em; }
     @media (min-width: 768px) {
       #dashboard .sidebar-menu {
-        padding: 3.125em; } }
+        padding: 1.5em; } }
     #dashboard .sidebar-menu--item {
-      margin-bottom: 1.625em;
+      margin-bottom: 1em;
       border-radius: 5px; }
       #dashboard .sidebar-menu--item a {
         display: flex;
@@ -920,26 +920,44 @@ html {
         color: #A0A0A0; }
       #dashboard .dashboard__left .courses__content-list--item .card-duration-text-value {
         font-size: 0.875rem; }
-  #dashboard .dashboard__left .courses__content-list--item .card-buttons {
-    gap: 0.8em;
-    font-family: "Metropolis";
-    font-size: 0.75rem; }
-    #dashboard .dashboard__left .courses__content-list--item .card-buttons-apply {
-      color: #6EBFC3;
-      background: transparent;
-      border: 3px solid #6EBFC3;
-      font-weight: 600;
-      transition: all ease-in-out 200ms; }
-      #dashboard .dashboard__left .courses__content-list--item .card-buttons-apply:hover {
-        color: #ffffff;
-        background: #6EBFC3; }
-    #dashboard .dashboard__left .courses__content-list--item .card-buttons-question {
-      color: #ffffff;
-      font-weight: 600; }
+  #dashboard .dashboard__left .courses__content-list--item .card-task {
+    gap: 0.5em; }
+    #dashboard .dashboard__left .courses__content-list--item .card-task-icon {
+      color: #682FFD;
+      background: rgba(104, 47, 253, 0.15);
+      padding: 4px; }
+      #dashboard .dashboard__left .courses__content-list--item .card-task-icon span {
+        width: 1em; }
+    #dashboard .dashboard__left .courses__content-list--item .card-task-text {
+      font-weight: 500; }
+      #dashboard .dashboard__left .courses__content-list--item .card-task-text p {
+        margin: 0;
+        padding: 0; }
+      #dashboard .dashboard__left .courses__content-list--item .card-task-text-key {
+        font-size: 0.625rem;
+        color: #A0A0A0; }
+      #dashboard .dashboard__left .courses__content-list--item .card-task-text-value {
+        font-size: 0.875rem; }
+  #dashboard .dashboard__left .courses__content-list--item .card-continue-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all ease-in-out 200ms; }
+    #dashboard .dashboard__left .courses__content-list--item .card-continue-link--text {
+      font-weight: 700;
+      font-size: 0.85em;
+      margin: 0;
+      padding: 0; }
   #dashboard .dashboard__left .courses__content-list--item .card:hover {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
 #dashboard .dashboard__left .external__links {
   gap: 1em; }
+  #dashboard .dashboard__left .external__links::-webkit-scrollbar {
+    display: none; }
+  @media (min-width: 768px) {
+    #dashboard .dashboard__left .external__links {
+      flex-wrap: nowrap;
+      overflow: auto; } }
   #dashboard .dashboard__left .external__links .competency {
     background: transparent linear-gradient(90deg, rgba(253, 186, 47, 0.3) 0%, rgba(216, 155, 29, 0.3) 100%) 0% 0% no-repeat padding-box; }
     #dashboard .dashboard__left .external__links .competency .external__links-card--bgimage {
