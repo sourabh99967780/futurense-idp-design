@@ -100,3 +100,11 @@ html {
 .form-action-buttons {
     gap: 1em;
 }
+
+.bg-custom-primary {
+  background: rgba($clr-primary, 0.1);
+}
+
+.bg-custom-secondary {
+  background: rgba($clr-secondary, 0.1);
+}

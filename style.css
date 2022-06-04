@@ -78,6 +78,12 @@ html {
 .form-action-buttons {
   gap: 1em; }
 
+.bg-custom-primary {
+  background: rgba(110, 191, 195, 0.1); }
+
+.bg-custom-secondary {
+  background: rgba(253, 186, 47, 0.1); }
+
 header {
   position: sticky;
   top: 0;
@@ -1062,6 +1068,39 @@ header {
         font-weight: 700; }
       #dashboard .dashboard__right .explore__content-action span {
         color: #6EBFC3; }
+#dashboard .applications__heading {
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+  font-weight: 600;
+  font-size: 1.4rem; }
+#dashboard .applications__list-item {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #F3F3F3; }
+  #dashboard .applications__list-item a {
+    transition: all ease-in-out 200ms; }
+  #dashboard .applications__list-item--icon .material-icons {
+    font-size: 2rem;
+    padding: 0.5em;
+    border-radius: 10px; }
+  #dashboard .applications__list-item--content-heading {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1em; }
+  #dashboard .applications__list-item--content-meta-item {
+    font-size: 0.9rem;
+    color: #A0A0A0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5em; }
+    #dashboard .applications__list-item--content-meta-item span {
+      color: #202020;
+      font-weight: 500; }
+  #dashboard .applications__list-item--status {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 1em;
+    text-decoration: none; }
 
 #dashboard.sidebar-toggled .toggle-icon span:nth-child(2) {
   display: none; }

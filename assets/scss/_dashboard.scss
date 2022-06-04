@@ -455,6 +455,65 @@
             }
         }
     }
+
+    .applications {
+        &__heading {
+            padding-bottom: 1em;
+            margin-bottom: 1.5em;
+            font-weight: $fw-metropolis-semi-bold;
+            font-size: 1.4rem;
+        }
+
+        &__list {
+            &-item {
+                background: $clr-white;
+                border-radius: 10px;
+                border: 1px solid $clr-gray;
+
+                a {
+                    transition: all ease-in-out 200ms;
+                }
+
+                &--icon {
+                    .material-icons {
+                        font-size: 2rem;
+                        padding: 0.5em;
+                        border-radius: 10px;
+                    }
+                }
+
+                &--content {
+                    &-heading {
+                        font-weight: $fw-metropolis-semi-bold;
+                        font-size: 1.2rem;
+                        margin-bottom: 1em;
+                    }
+
+                    &-meta {
+                        &-item {
+                            font-size: 0.9rem;
+                            color: $clr-footer-link;
+                            margin: 0;
+                            padding: 0;
+                            margin-bottom: 0.5em;
+
+                            span {
+                                color: $clr-filler;
+                                font-weight: $fw-metropolis-medium;
+                            }
+                        }
+                    }
+                }
+
+                &--status {
+                    display: flex;
+                    gap: 0.5em;
+                    margin-top: 1em;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 
 #dashboard.sidebar-toggled {
