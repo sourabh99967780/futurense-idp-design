@@ -1,0 +1,115 @@
+#view-application {
+  .submission-hero {
+    background: $clr-filler;
+    color: $clr-white;
+    padding: 1em;
+    padding-top: 2em;
+
+    @include for-medium-devices {
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  .view-application {
+    &-section {
+      &--title {
+        font-weight: 600;
+        font-size: 1.1rem;
+        gap: 0.5em;
+      }
+
+      &--background {
+        display: none;
+
+        @include for-medium-devices {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: -23px;
+          top: 25px;
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      &--content {
+        &-pane {
+          &--title {
+            font-weight: 500;
+          }
+        }
+
+        &-list {
+          &-item {
+            width: 100%;
+            margin-bottom: 0.8em;
+
+            @include for-medium-devices {
+              width: 20%;
+            }
+
+            &--label {
+              font-weight: 600;
+              font-size: 0.8rem;
+              color: $clr-footer-link;
+              margin-bottom: unset;
+            }
+            &--value {
+              font-size: 1rem;
+              color: $clr-filler;
+            }
+          }
+        }
+      }
+    }
+  }
+  details {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0.1rem 1rem -0.5rem rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1em;
+  }
+
+  summary {
+    padding: 1rem;
+    display: block;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+  summary:before {
+    content: "";
+    border-width: 0.4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent $clr-primary;
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: 0.2rem 50%;
+    transition: 0.25s transform ease;
+  }
+
+  summary::marker {
+    content: "";
+  }
+
+  /* THE MAGIC 🧙‍♀️ */
+  details[open] > summary:before {
+    transform: rotate(90deg);
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details > ul {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+}
