@@ -204,6 +204,9 @@ header {
     @media (min-width: 992px) {
       #marketing .courses__content .card {
         width: 22em !important; } }
+  #marketing .courses__content-image-wrapper img {
+    height: 12em;
+    width: 100%; }
   @media (min-width: 992px) {
     #marketing .courses__content-list {
       gap: 1em; } }
@@ -220,9 +223,13 @@ header {
     #marketing .courses__content-list--item .card-title {
       font-family: "Metropolis";
       font-weight: 600;
-      font-size: 1.25rem; }
+      font-size: 1.25rem;
+      height: 2.5em;
+      overflow: auto; }
     #marketing .courses__content-list--item .card-text {
-      font-size: 0.875rem; }
+      font-size: 0.875rem;
+      height: 6em;
+      overflow: auto; }
     #marketing .courses__content-list--item .card-date {
       align-items: center;
       gap: 0.5em; }
@@ -445,7 +452,10 @@ header {
     margin-bottom: 0.5em; }
     @media (min-width: 992px) {
       #browse-courses .courses__content .card {
-        width: 20em !important; } }
+        width: 22em !important; } }
+  #browse-courses .courses__content-image-wrapper img {
+    height: 12em;
+    width: 100%; }
   @media (min-width: 992px) {
     #browse-courses .courses__content-list {
       gap: 1em; } }
@@ -462,9 +472,13 @@ header {
     #browse-courses .courses__content-list--item .card-title {
       font-family: "Metropolis";
       font-weight: 600;
-      font-size: 1.25rem; }
+      font-size: 1.25rem;
+      height: 2.5em;
+      overflow: auto; }
     #browse-courses .courses__content-list--item .card-text {
-      font-size: 0.875rem; }
+      font-size: 0.875rem;
+      height: 6em;
+      overflow: auto; }
     #browse-courses .courses__content-list--item .card-date {
       align-items: center;
       gap: 0.5em; }
@@ -877,7 +891,8 @@ header {
     #dashboard .dashboard__left .courses__content .card {
       width: 22em !important; } }
 #dashboard .dashboard__left .courses__content-image-wrapper img {
-  max-height: 12em; }
+  height: 12em;
+  width: 100%; }
 @media (min-width: 992px) {
   #dashboard .dashboard__left .courses__content-list {
     gap: 1em; } }
@@ -894,7 +909,9 @@ header {
   #dashboard .dashboard__left .courses__content-list--item .card-title {
     font-family: "Metropolis";
     font-weight: 600;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    height: 2.5em;
+    overflow: auto; }
   #dashboard .dashboard__left .courses__content-list--item .card-text {
     font-size: 0.875rem;
     max-height: 6em;

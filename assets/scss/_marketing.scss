@@ -143,6 +143,13 @@
                 }
             }
 
+            &-image-wrapper {
+                img {
+                    height: 12em;
+                    width: 100%;
+                }
+            }
+
             &-list {
                 @include for-large-devices {
                     gap: 1em;
@@ -174,10 +181,14 @@
                             font-family: $ff-gilroy;
                             font-weight: $fw-gilroy-semibold;
                             font-size: 1.25rem;
+                            height: 2.5em;
+                            overflow: auto;
                         }
 
                         &-text {
                             font-size: 0.875rem;
+                            height: 6em;
+                            overflow: auto;
                         }
 
                         &-date {

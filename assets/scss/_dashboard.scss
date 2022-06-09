@@ -123,7 +123,8 @@
 
                     &-image-wrapper {
                         img {
-                            max-height: 12em;
+                            height: 12em;
+                            width: 100%;
                         }
                     }
         
@@ -158,6 +159,8 @@
                                     font-family: $ff-gilroy;
                                     font-weight: $fw-gilroy-semibold;
                                     font-size: 1.25rem;
+                                    height: 2.5em;
+                                    overflow: auto;
                                 }
         
                                 &-text {
